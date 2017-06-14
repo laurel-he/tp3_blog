@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Single</title>
+<link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="__PUBLIC__/css/style.css" rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
+<!-- jQuery (necessary JavaScript plugins) -->
+<script type='text/javascript' src="__PIBLIC__/js/jquery-1.11.1.min.js"></script>
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Game Spot Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+  
+</head>
+<body>
+<include file="./Application/Home/Common/header.html" />
+<!---->
+
+<div class="container" style="height:auto">
+				<div class="single">
+					<div class="blog-to">		
+					
+						<img class="img-responsive sin-on" src="{$build.blog_images}" alt="" height="200" width="400"/>
+							<div class="blog-top">
+							<div class="blog-left">
+								<b>23</b>
+								<span>{$build.blog_time}</span>
+							</div>
+							<div class="top-blog">
+								<a class="fast" href="#">{$build.blog_time}</a>
+								<p>{$Think.lang.posted}<a href="#">{$build.blog_author}</a>{$Think.lang.group}<a href="#">{$build.blog_group}</a> | <a href="#">{$number}{$Think.lang.comments}</a></p> 
+								<p class="sed">{$build.blog_name}</p> 
+									 <p>{$build.blog_content}</p>
+						<div class="clearfix"> </div>
+							</div>
+							<div class="clearfix"> </div>
+					</div>
+					</div>
+						
+					
+				
+		<div class="single-middle">
+			
+			<h3>{$Think.lang.hot}</h3>
+			<!-- 循环输出评论内容 -->
+<volist name="message" id="com0" offset="0" length="5">
+				<div class="media">
+				  <div class="media-left">
+					<a href="#">
+					  <img class="media-object" src="{$com0.avatar}" alt="" width="65" height="65">
+					</a>
+				  </div>
+				  <div class="media-body">
+					<h4 class="media-heading"><a href="#">{$com0.name}</a></h4>
+						<p>{$com0.message}</p>
+				  </div>
+				</div>
+</volist>
+
+			
+		</div>
+		<!---->
+		<div class="single-bottom">
+<!-- 点击后可以查看所有评论 -->
+<div><a href="{:U('Comments/read',array('id'=>$id))}">查看更多</a></div>	
+<h3>{$Think.lang.userName}:{$user_name}</h3>	
+			<h3>{$Think.lang.comments}</h3>
+				<form action="{:U('Comments/add')}" method="post">
+				<input type="hidden" name="blog_id" value="{$id}" />
+				<input type="hidden" name="name" value="{:cookie('user_name')}" /> 
+					<textarea name="message" cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '{$Think.lang.content}';}">{$Think.lang.content}</textarea>						
+							<input type="submit" value="{$Think.lang.send}" >				
+				</form>
+			</div>
+		</div>
+</div>
+
+<!--引入footer-->
+<include file="./Application/Home/Common/footer.html" />
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+html,body,h1,p,div
+{
+	padding:0px;
+	margin:0px;
+}
+#bod
+{
+	width:100%;
+	height:800px;
+}
+#read-head
+{
+	text-align:center;
+}
+#read-left
+{
+	float:left;
+	width:500px;	
+	background-color:red;
+}
+#read-right
+{
+	float:right;
+	width:1000px;
+	
+}

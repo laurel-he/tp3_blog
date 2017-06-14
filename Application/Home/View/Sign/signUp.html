@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<link href="__PUBLIC__/css/login_style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="shortcut icon"  href="__PUBLIC__/images/favicon.ico" />
+<link rel="Bookmark" href="__PUBLIC__/images/fivicon.ico" />
+<link href="__PUBLIC__/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="__PUBLIC__/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="__PUBLIC__/css/lightbox.css">
+<script type='text/javascript' src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+    <script>
+$('#user_name').blur(
+        function(){
+            var user_name = $(this).val;
+            $.post("{:U()}")
+        }
+            )        
+</script>
+   
+<!--插入验证用户信息ajax -->
+<script type="text/javascript" href="__PUBLIC__/js/ajax_login.js"></script>
+
+<include file="./Application/Home/Common/header.html" />
+</head>
+<body>
+	<div class="main">
+		<div class="header" >
+			<h1>{$Think.lang.sign}</h1>
+		</div>
+		<p>{$Think.lang.signNote}</p>
+			<form action="{:U('Sign/register')}" method="post" enctype="multipart/form-data">
+				<ul class="left-form">
+					<h2>{$Think.lang.signUp}</h2>
+					<li>
+						<input type="text"   placeholder="{$Think.lang.userName}" name="user_name" onkeyup="user_volidate(this.value)"required/>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="text"   placeholder="{$Think.lang.email}" name="email" required/>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="password"   placeholder="{$Think.lang.password}" name="user_pwd" required/>
+						<!-- <a href="#" class="icon into"> </a> -->
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="password"   placeholder="{$Think.lang.informPassword}" name="user_pwd" required/>
+						<!-- <a href="#" class="icon into"> </a> -->
+						<div class="clear"> </div>
+					</li> 
+					<li>
+					<b><p>选择您要上传的头像，若需更改请联系管理员</p></b>
+					    <input type="file"  name="user_image" placeholder="{$Think.lang.userImage}" required/>
+					    <div class="clear"> </div>
+					</li>
+					<li>
+					<input type="text" name="verify" placeholder="请输入验证码" required/>
+					<div class="clear"> </div>
+					
+					</li>
+					<img src="{:U('Sign/verify')}" />
+					
+					<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>{$Think.lang.passInform}</label>
+					<div class="clear"> </div>
+					<input type="submit" onClick="myFunction()" value="{$Think.lang.create_account}">
+						<div class="clear"> </div>
+				</ul>
+                            </form>
+                <form action="{:U('Sign/signIn')}" method="post">
+				<ul class="right-form">
+					<h3>{$Think.lang.login}</h3>
+					<div>
+						<li><input type="text"  name="user_name" placeholder="{$Think.lang.userName}" required/></li>
+						<li> <input type="password"  name="user_pwd" placeholder="{$Think.lang.password}" required/></li>
+						<h4>{$Think.lang.gorgetPass}</h4>
+							<input type="submit" value="{$Think.lang.login_box}" >
+					</div>
+					<div class="clear"> </div>
+				</ul>
+				<div class="clear"> </div>
+					
+			</form>
+			
+		</div>
+			<!--引入footer-->
+<include file="./Application/Home/Common/footer.html" />
+
+	
+</body>
+</html>
