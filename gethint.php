@@ -4,7 +4,7 @@ $dsn = "mysql:host=localhost;dbname=tp3";
 $db = new PDO($dsn, 'root', 'root');
 $rs = $db->query("SELECT user_name FROM think_users");
 $result_arr = $rs->fetchAll();
-print_r($result_arr);
+
 $q=$_GET["q"];
 
 //如果 q 大于 0，则查找数组中的所有提示
@@ -13,15 +13,15 @@ if (strlen($q) > 0)
   $hint="";
   for($i=0; $i<count($result_arr); $i++)
     {
-    if (strtolower($q)==strtolower($result_arr[$i][user_name]))
+    if (strtolower($q)==strtolower($result_arr[$i]['user_name']))
       {
       if ($hint=="")
         {
-        $hint=$result_arr[$i];
+        $hint=$result_arr[$i]['user_name'];
         }
       else
         {
-        $hint=$hint." , ".$result_arr[$i];
+        $hint=$hint." , ".$result_arr[$i]['user_name'];
         }
       }
     }
