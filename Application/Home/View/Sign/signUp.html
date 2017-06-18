@@ -60,9 +60,9 @@ $('#user_name').blur(
 					<li>
 					<input type="text" name="verify" placeholder="请输入验证码" required/>
 					<div class="clear"> </div>
-					
-					</li>
 					<img src="{:U('Sign/verify')}" />
+			
+					</li>
 					
 					<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>{$Think.lang.passInform}</label>
 					<div class="clear"> </div>
@@ -86,6 +86,7 @@ $('#user_name').blur(
 			</form>
 			
 		</div>
+    <a href="{:U('Sign/getUserInfo')}">微信公众号授权登陆</a>
 			<!--引入footer-->
 <include file="./Application/Home/Common/footer.html" />
 
