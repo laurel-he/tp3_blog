@@ -145,5 +145,47 @@ class SignController extends Controller {
         $verify->entry();
     }
     
+    /**
+
+     * 微信授权     */
+    function getUserInfo()
+{
+    //获取code
+    //获取网页授权的access_token'
+    $appid = "wxb00a8604f49a4ca6";
+    $redirect_uri = urlencode("http://www.hexiaojiao.top/index.php/Home/Sign-getUserOpenId.tpl");
+    $url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=".$appid."&redirect_uri=".$redirect_uri."&response_type=code&scope=snsapi_userinfo&state=123STATE#wechat_redirect";
+    header("location:".$url);
+    
+}
+function getUserOpenId()
+{
+    $code = $_GET['code'];
+    $appid = "wxb00a8604f49a4ca6";
+    $appsecret = "cecf1cb743ad49a1baac5d6fb5681377";
+    $url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=".$appid."&secret=".$appsecret."&code=".$code."&grant_type=authorization_code";
+    //获取网页授权额access_token
+    //通过curl获取数据包
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+     curl_setopt($ch, CURLOPT_HEADER, false);
+ curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
+    $res = curl_exec($ch);
+        $out_put = json_decode($res,true);
+
+    curl_close($ch);
+
+
+    $access_token = $out_put['access_token'];
+    $openid = $res['openid'];
+    $info_url = "https://api.weixin.qq.com/sns/userinfo?access_token=".$access_token."&openid=".$openid."&lang=zh_CN";
+    $new_ch = curl_init();
+    curl_setopt($new_ch, CURLOPT_URL, $info_url);
+    curl_setopt($new_ch, CURLOPT_HEADER, 0);
+    $new_res = curl_exec($new_ch);
+    curl_close($new_ch);
+
+//    var_dump($new_res);
+}
     
 }
