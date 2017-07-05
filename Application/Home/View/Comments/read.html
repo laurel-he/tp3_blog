@@ -13,22 +13,26 @@
 <include file="./Application/Home/Common/header.html" />
 <h1 id="read-head">评论列表</h1>
 <div id="bod" >
+
 <div id="read-right" style="clear:both;height:auto;overflow:hidden">
-<volist name="data" id="comments">
-<div class="media">
+
+<foreach name='select' item='data_info' >
+        <div class="media">
 				  <div class="media-left">
 					<a href="#">
-					  <img class="media-object" src="{$comments.avatar}" alt="" width="60px" height="60px">
+					  <img class="media-object" src="{$data_info.avatar}" alt="" width="60px" height="60px">
 					</a>
 				  </div>
 				  <div class="media-body">
-					<h4 class="media-heading"><a href="#">{$comments.name}</a></h4>
-						<p>{$comments.message}</p>
+					<h4 class="media-heading"><a href="#">{$data_info.name}</a></h4>
+						<p>{$data_info.message}</p>
 				  </div>
 				</div>
+<hr /><hr />
+      </foreach>
 
-</volist>
-</div>
+<center class="pages">{$data_list}</center>
+
 </div>
 <!--引入footer-->
 <footer style="clear:both"><include file="./Application/Home/Common/footer.html" /></footer>

@@ -23,11 +23,20 @@ class CommentsController extends Controller{
     {
         $Comments = M('Comments');
         $id=I('get.id',1);
+        
+        //数据分页代码
+        $count = $Comments->join('RIGHT JOIN think_users ON think_comments.name=think_users.user_name')->where('blog_id='.$id)->count();
+        $Page = new \Think\Page($count,4);
+        $Page->setConfig('header', '条数据');
+        $Page->setConfig('first', '<<');
+        $Page->setConfig('last', '>>');
+        $show = $Page->show();
         //读取数据
-        $data = $Comments->join('RIGHT JOIN think_users ON think_comments.name=think_users.user_name')->where('blog_id='.$id)->order('praise desc')->select();
-        if($data){
-            $this->assign('data',$data);//模版变量赋值
-        }
+        $list = $Comments->join('RIGHT JOIN think_users ON think_comments.name=think_users.user_name')->where('blog_id='.$id)->order('praise desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        if($list){
+            $this->assign('data_list',$show);
+            $this->assign('select',$list);
+                   }
         else
         {
             $this->error("数据错误");
