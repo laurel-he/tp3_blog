@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>Reviews</title>
-<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/Public/images/fivicon.ico" />
-<link href="/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
+<link href="/www/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
 
 <!-- jQuery (necessary JavaScript plugins) -->
-<script type='text/javascript' src="/Public/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="/www/Public/js/jquery-1.11.1.min.js"></script>
 <!-- Custom Theme files -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
 <!-- Custom Theme files -->
@@ -24,9 +24,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
     <!--引入header文件-->
 <!-- header -->
-<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/Public/images/fivicon.ico" />
-
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -73,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -89,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g7.jpg" class="img-responsive" alt=""/></a>
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g7.jpg" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
 							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
@@ -101,34 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g8.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="review-grids">
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g2.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g1.jpg" class="img-responsive" alt=""/></a>
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g8.jpg" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
 							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
@@ -143,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g3.jpg" class="img-responsive" alt=""/></a>
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g2.jpg" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
 							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
@@ -155,7 +127,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g4.jpg" class="img-responsive" alt=""/></a>
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g1.jpg" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
 							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
@@ -170,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g6.jpg" class="img-responsive" alt=""/></a>
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g3.jpg" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
 							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
@@ -182,7 +154,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/Public/images/g9.jpg" class="img-responsive" alt=""/></a>
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g4.jpg" class="img-responsive" alt=""/></a>
+						 </div>
+						 <div class="col-md-7 rft-pic-info">
+							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
+							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
+						 </div>
+						 <div class="clearfix"></div>
+					 </div>
+				 </div>
+				 <div class="clearfix"></div>
+			 </div>
+			 <div class="review-grids">
+				 <div class="col-md-6 revw">
+					 <div class="rft-grid">
+						 <div class="col-md-5 rft-pic">
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g6.jpg" class="img-responsive" alt=""/></a>
+						 </div>
+						 <div class="col-md-7 rft-pic-info">
+							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
+							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
+						 </div>
+						 <div class="clearfix"></div>
+					 </div>
+				 </div>
+				 <div class="col-md-6 revw">
+					 <div class="rft-grid">
+						 <div class="col-md-5 rft-pic">
+							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g9.jpg" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
 							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
@@ -221,7 +220,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

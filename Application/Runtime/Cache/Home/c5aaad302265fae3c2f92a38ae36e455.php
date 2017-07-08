@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link href="/Public/css/read.css" rel='stylesheet' type='text/css' />
+<link href="/www/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/www/Public/css/read.css" rel='stylesheet' type='text/css' />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
 <!-- jQuery (necessary JavaScript plugins) -->
 </head>
 <body>
 <!-- header -->
-<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/Public/images/fivicon.ico" />
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -59,7 +59,7 @@
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -69,19 +69,24 @@
 
 <h1 id="read-head">评论列表</h1>
 <div id="bod" >
+
 <div id="read-right" style="clear:both;height:auto;overflow:hidden">
-<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$comments): $mod = ($i % 2 );++$i;?><div class="media">
+
+<?php if(is_array($select)): foreach($select as $key=>$data_info): ?><div class="media">
 				  <div class="media-left">
 					<a href="#">
-					  <img class="media-object" src="<?php echo ($comments["avatar"]); ?>" alt="" width="60px" height="60px">
+					  <img class="media-object" src="<?php echo ($data_info["avatar"]); ?>" alt="" width="60px" height="60px">
 					</a>
 				  </div>
 				  <div class="media-body">
-					<h4 class="media-heading"><a href="#"><?php echo ($comments["name"]); ?></a></h4>
-						<p><?php echo ($comments["message"]); ?></p>
+					<h4 class="media-heading"><a href="#"><?php echo ($data_info["name"]); ?></a></h4>
+						<p><?php echo ($data_info["message"]); ?></p>
 				  </div>
-				</div><?php endforeach; endif; else: echo "" ;endif; ?>
-</div>
+				</div>
+<hr /><hr /><?php endforeach; endif; ?>
+
+<center class="pages"><?php echo ($data_list); ?></center>
+
 </div>
 <!--引入footer-->
 <footer style="clear:both"><!-- footer -->
@@ -108,7 +113,7 @@
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

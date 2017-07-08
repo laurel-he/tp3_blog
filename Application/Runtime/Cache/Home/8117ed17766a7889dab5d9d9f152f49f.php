@@ -2,21 +2,21 @@
 <html dir="ltr" lang="en-US">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/Public/images/fivicon.ico" />
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
 
 	<title>贺小花的个人博客</title>
 
 	<!--- CSS --->
-	<link rel="stylesheet" href="/Public/css/loginIn_style.css" type="text/css" />
+	<link rel="stylesheet" href="/www/Public/css/loginIn_style.css" type="text/css" />
 
 
 	<!--- Javascript libraries (jQuery and Selectivizr) used for the custom checkbox --->
 
 	<!--[if (gte IE 6)&(lte IE 8)]>
-		<script type="text/javascript" src="/Public/js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="/Public/js/selectivizr.js"></script>
-		<noscript><link rel="stylesheet" href="/Public/css/fallback.css" /></noscript>
+		<script type="text/javascript" src="/www/Public/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="/www/Public/js/selectivizr.js"></script>
+		<noscript><link rel="stylesheet" href="/www/Public/css/fallback.css" /></noscript>
 	<![endif]-->
 
 	</head>

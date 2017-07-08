@@ -2,15 +2,15 @@
 <html>
 <head>
 		<meta charset="utf-8">
-		<link href="/Public/css/login_style.css" rel='stylesheet' type='text/css' />
+		<link href="/www/Public/css/login_style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/Public/images/fivicon.ico" />
-<link href="/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="/Public/css/lightbox.css">
-<script type='text/javascript' src="/Public/js/jquery-1.11.1.min.js"></script>
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
+<link href="/www/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/www/Public/css/lightbox.css">
+<script type='text/javascript' src="/www/Public/js/jquery-1.11.1.min.js"></script>
     <script>
 $('#user_name').blur(
         function(){
@@ -19,13 +19,19 @@ $('#user_name').blur(
         }
             )        
 </script>
-   
+<script>
+function fleshVerify(){
+//重载验证码
+ $('#verify_image').attr('src',"/www/index.php/Home/Sign-signUp.tpl?flag"+Math.floor(Math.random()*100));
+
+}
+</script>
 <!--插入验证用户信息ajax -->
-<script type="text/javascript" href="/Public/js/ajax_login.js"></script>
+<script type="text/javascript" href="/www/Public/js/ajax_login.js"></script>
 
 <!-- header -->
-<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/Public/images/fivicon.ico" />
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -72,7 +78,7 @@ $('#user_name').blur(
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -85,12 +91,13 @@ $('#user_name').blur(
 	<div class="main">
 		<div class="header" >
 			<h1><?php echo (L("sign")); ?></h1>
+                            <a href="<?php echo U('Sign/getUserInfo');?>"><img src="/www/Public/images/login/wX.jpg" width="100" height="100"></a>
 		</div>
 		<p><?php echo (L("signNote")); ?></p>
 			<form action="<?php echo U('Sign/register');?>" method="post" enctype="multipart/form-data">
 				<ul class="left-form">
 					<h2><?php echo (L("signUp")); ?></h2>
-					<li>
+					<li onclick="test()">
 						<input type="text"   placeholder="<?php echo (L("userName")); ?>" name="user_name" onkeyup="user_volidate(this.value)"required/>
 						<div class="clear"> </div>
 					</li> 
@@ -113,12 +120,12 @@ $('#user_name').blur(
 					    <input type="file"  name="user_image" placeholder="<?php echo (L("userImage")); ?>" required/>
 					    <div class="clear"> </div>
 					</li>
-					<li>
+					<li id="verify_check">
 					<input type="text" name="verify" placeholder="请输入验证码" required/>
 					<div class="clear"> </div>
+					<img id="verify_image" src="<?php echo U('Sign/verify',array('flag'=>1));?>"  onclick="fleshVerify()"/>
 					
 					</li>
-					<img src="<?php echo U('Sign/verify');?>" />
 					
 					<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i><?php echo (L("passInform")); ?></label>
 					<div class="clear"> </div>
@@ -142,6 +149,7 @@ $('#user_name').blur(
 			</form>
 			
 		</div>
+
 			<!--引入footer-->
 <!-- footer -->
 <div class="footer">
@@ -167,7 +175,7 @@ $('#user_name').blur(
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

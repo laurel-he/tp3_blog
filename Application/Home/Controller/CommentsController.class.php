@@ -27,9 +27,14 @@ class CommentsController extends Controller{
         //数据分页代码
         $count = $Comments->join('RIGHT JOIN think_users ON think_comments.name=think_users.user_name')->where('blog_id='.$id)->count();
         $Page = new \Think\Page($count,4);
-        $Page->setConfig('header', '条数据');
-        $Page->setConfig('first', '<<');
-        $Page->setConfig('last', '>>');
+        $Page->lastSuffix=false;
+        $Page->setConfig('header','<li class="rows">共<b>%TOTAL_ROW%</b>条记录&nbsp;&nbsp;每页<b>%LIST_ROW%</b>条&nbsp;&nbsp;第<b>%NOW_PAGE%</b>页/共<b>%TOTAL_PAGE%</b>页</li>');
+        $Page->setConfig('header', '共%TOTAL_ROW%条数据');
+        $Page->setConfig('first', '首页');
+        $Page->setConfig('last', '末页');
+        $Page->setConfig('prev', '上一页');
+        $Page->setConfig('next', '下一页');
+        $Page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
         $show = $Page->show();
         //读取数据
         $list = $Comments->join('RIGHT JOIN think_users ON think_comments.name=think_users.user_name')->where('blog_id='.$id)->order('praise desc')->limit($Page->firstRow.','.$Page->listRows)->select();

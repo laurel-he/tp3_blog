@@ -2,14 +2,14 @@
 <html>
 <head>
 <title>相册</title>
-<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/Public/images/fivicon.ico" />
-<link href="/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="/Public/css/lightbox.css">
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
+<link href="/www/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/www/Public/css/lightbox.css">
 
 <!-- jQuery (necessary JavaScript plugins) -->
-<script type='text/javascript' src="/Public/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="/www/Public/js/jquery-1.11.1.min.js"></script>
 <!-- Custom Theme files -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
 <!-- Custom Theme files -->
@@ -23,6 +23,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!-- header -->
+<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -69,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -84,53 +86,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="gallery-bottom">
 				<div class="gallery-1">
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g2.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g2.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g2.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g2.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g1.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g1.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g1.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g1.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g3.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g3.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g3.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g3.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g4.jpg" alt=""/></a>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="gallery-1">
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g5.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g6.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g6.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g9.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g9.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g7.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g4.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="gallery-1">
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g4.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g5.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g7.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g6.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g6.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g5.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g9.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g9.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/Public/images/g8.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g8.jpg" alt=""/></a>
+						<a class="example-image-link" href="/www/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g7.jpg" alt=""/></a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="gallery-1">
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/www/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g4.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/www/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g7.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/www/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g5.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/www/Public/images/g8.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g8.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				</div>				
 		 </div>
 	 </div>
 </div>	
-<script src="/Public/js/lightbox-plus-jquery.min.js"></script>
+<script src="/www/Public/js/lightbox-plus-jquery.min.js"></script>
 
 <!--引入footer-->
 <!-- footer -->
@@ -157,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>
