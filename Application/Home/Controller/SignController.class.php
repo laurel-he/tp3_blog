@@ -187,5 +187,9 @@ function getUserOpenId()
 
 //    var_dump($new_res);
 }
+public function forget()
+{
+    $this->display();
+}
     
 }

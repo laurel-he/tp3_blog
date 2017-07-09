@@ -4,18 +4,18 @@
 <meta name="baidu-site-verification" content="vTLMT2DocA" />
 <title><?php echo (L("title")); ?></title>
 <!-- 引入ico图标并且设置书签栏 -->
-<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
-<link href="/www/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="/www/Public/css/lightbox.css">
+<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
+<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/tp3/tp3_blog/Public/css/lightbox.css">
 
 <!-- jQuery -->
-<script type='text/javascript' src="/www/Public/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="/tp3/tp3_blog/Public/js/jquery-1.11.1.min.js"></script>
 <!--分享当前页面到qq空间-->
-<script type='text/javascript' src="/www/Public/js/share.js"></script>
+<script type='text/javascript' src="/tp3/tp3_blog/Public/js/share.js"></script>
 <!--引入css文件 -->
-<link href='/www/Public/css/family.css' rel='stylesheet' type='text/css'>
+<link href='/tp3/tp3_blog/Public/css/family.css' rel='stylesheet' type='text/css'>
 <!-- Custom Theme files -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,7 +74,7 @@
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/tp3/tp3_blog/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -112,7 +112,7 @@
 						 <p><?php echo (L("motto")); ?></p>
 					 </div>
 					 <div class="info-pic">	
-						 <img src="/www/Public/images/ps.png" class="img-responsive" alt=""/>
+						 <img src="/tp3/tp3_blog/Public/images/ps.png" class="img-responsive" alt=""/>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>				 
@@ -183,7 +183,7 @@
 						<div role="tabpanel" class="tab-pane active re-pad2" id="home">
 						   <div class="game1">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/www/Public/images/tr1.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr1.jpg" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-pic-info">
 								<h4><a href="<?php echo ($singleUrl); ?>">Angry Birds</a></h4>
@@ -193,7 +193,7 @@
 							</div>
 							<div class="game1">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/www/Public/images/tr3.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr3.jpg" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-pic-info">
 								<h4><a href="<?php echo ($singleUrl); ?>">Vice City GTA</a></h4>
@@ -203,7 +203,7 @@
 							</div>
 							<div class="game1">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/www/Public/images/tr2.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr2.jpg" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-pic-info">
 								<h4><a href="<?php echo ($singleUrl); ?>">Call Of Duty</a></h4>
@@ -215,7 +215,7 @@
 						<div role="tabpanel" class="tab-pane re-pad2" id="profile">
 							<div class="game-post">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/www/Public/images/tr4.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr4.jpg" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-post-info">
 								<h4><a href="<?php echo ($singleUrl); ?>">IronMan</a></h4>
@@ -225,7 +225,7 @@
 							</div>
 							<div class="game-post">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/www/Public/images/tr5.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr5.jpg" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-post-info">
 								<h4><a href="<?php echo ($singleUrl); ?>">God Of War</a></h4>
@@ -235,7 +235,7 @@
 							</div>
 							<div class="game-post">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/www/Public/images/tr6.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr6.jpg" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-post-info">
 								<h4><a href="<?php echo ($singleUrl); ?>">Need For Speed</a></h4>
@@ -258,37 +258,37 @@
 				 <h4><?php echo (L("gallery")); ?></h4>
 				 <div class="gallery-1">
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p2.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p2.jpg" alt=""/></a>
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p2.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p2.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p1.jpg" alt=""/></a>
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p1.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p3.jpg" alt=""/></a>
-					</div>
-					<div class="clearfix"></div>
-				 </div>
-				 <div class="gallery-1">
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p4.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p5.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p5.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p6.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p6.jpg" alt=""/></a>
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p3.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				 </div>
 				 <div class="gallery-1">
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p1.jpg" alt=""/></a>
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p4.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p3.jpg" alt=""/></a>
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p5.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p5.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/www/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/p4.jpg" alt=""/></a>
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p6.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p6.jpg" alt=""/></a>
+					</div>
+					<div class="clearfix"></div>
+				 </div>
+				 <div class="gallery-1">
+					<div class="col-md-4 gallery-grid-pic">
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p1.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-4 gallery-grid-pic">
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p3.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-4 gallery-grid-pic">
+						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p4.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				 </div>
@@ -301,7 +301,7 @@
 </div>
 
 
-<script src="/www/Public/js/lightbox-plus-jquery.min.js"></script>
+<script src="/tp3/tp3_blog/Public/js/lightbox-plus-jquery.min.js"></script>
 
 <!--引入footer-->
 <!-- footer -->
@@ -328,7 +328,7 @@
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/tp3/tp3_blog/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

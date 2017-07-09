@@ -26,114 +26,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <include file="./Application/Home/Common/header.html" />
 <div class="review">
 	 <div class="container">
-		 <h2>Reviews</h2>
+		 <h2>{$Think.lang.name}</h2>
 		 <div class="review-sec">
 			 <div class="review-grids">
-				 <div class="col-md-6 revw">
+			 <volist name="content" id="cont">
+			 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g7.jpg" class="img-responsive" alt=""/></a>
+							 <a href="{:U('Single/single')}"><img style="height:200px;width:200px;" src="{$cont.blog_images}" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
+							  <h4><a href="{:U('Single/single')}">{$cont.blog_name}</a></h4>
+							 <p>{$cont.blog_content|substr=0,200}</p>
 						 </div>
-						 <div class="clearfix"></div>
+						 <div class="clearfix"></div><br />
 					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g8.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
+				 </div></volist>
+				 
 				 <div class="clearfix"></div>
 			 </div>
-			 <div class="review-grids">
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g2.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g1.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="review-grids">
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g3.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g4.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="review-grids">
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g6.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img src="__PUBLIC__/images/g9.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
+			 
+			 	 </div>
 				 <div class="clearfix"></div>
 			 </div>
 		 </div>

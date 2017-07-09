@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon"  href="__PUBLIC__/images/favicon.ico" />
+<link rel="Bookmark" href="__PUBLIC__/images/fivicon.ico" />
+<link href="__PUBLIC__/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="__PUBLIC__/css/style.css" rel='stylesheet' type='text/css' />
+<script>
+	$(function(){ 
+    $("#sub_btn").click(function(){ 
+        var email = $("#email").val(); 
+        var preg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //匹配Email 
+        if(email=='' || !preg.test(email)){ 
+            $("#chkmsg").html("请填写正确的邮箱！"); 
+        }else{ 
+            $("#sub_btn").attr("disabled","disabled").val('提交中..').css("cursor","default"); 
+            $.post("sendmail.php",{mail:email},function(msg){ 
+                if(msg=="noreg"){ 
+                    $("#chkmsg").html("该邮箱尚未注册！"); 
+                    $("#sub_btn").removeAttr("disabled").val('提 交').css("cursor","pointer"); 
+                }else{ 
+                    $(".demo").html("<h3>"+msg+"</h3>"); 
+                } 
+            }); 
+        } 
+    }); 
+})
+</script>
+<script>
+function fleshVerify(){
+//重载验证码
+ $('#verify_image').attr('src',"/tp3/tp3_blog/index.php/Home/Sign-verify-flag-"+Math.floor(Math.random()*100))+".tpl";
+
+}
+</script>
+<!--插入验证用户信息ajax -->
+
+<include file="./Application/Home/Common/header.html" />
+</head>
+<body>
+<br /><br /><br />
+	<center><form action="">
+		<b><p>请输入注册时使用的邮箱账号：</p></b>
+		<input type="text" name="email" id="email" /><br /><br />
+		<img id="verify_image" src="{:U('Sign/verify',array('flag'=>1))}"  onclick="fleshVerify()"/>
+		<input type="submit" name="sub" value="找回密码"/>
+	</form>
+</center>
+<br /><br /><br />
+
+			<!--引入footer-->
+<include file="./Application/Home/Common/footer.html" />
+
+	
+</body>
+</html>

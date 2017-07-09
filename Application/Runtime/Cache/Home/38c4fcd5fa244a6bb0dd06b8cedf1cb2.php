@@ -2,31 +2,40 @@
 <html>
 <head>
 		<meta charset="utf-8">
-		<link href="/tp3/tp3_blog/Public/css/login_style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
+		<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
 <link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
 <link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="/tp3/tp3_blog/Public/css/lightbox.css">
-<script type='text/javascript' src="/tp3/tp3_blog/Public/js/jquery-1.11.1.min.js"></script>
-    <script>
-$('#user_name').blur(
-        function(){
-            var user_name = $(this).val;
-            $.post("<?php echo U();?>")
-        }
-            )        
+<script>
+	$(function(){ 
+    $("#sub_btn").click(function(){ 
+        var email = $("#email").val(); 
+        var preg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //匹配Email 
+        if(email=='' || !preg.test(email)){ 
+            $("#chkmsg").html("请填写正确的邮箱！"); 
+        }else{ 
+            $("#sub_btn").attr("disabled","disabled").val('提交中..').css("cursor","default"); 
+            $.post("sendmail.php",{mail:email},function(msg){ 
+                if(msg=="noreg"){ 
+                    $("#chkmsg").html("该邮箱尚未注册！"); 
+                    $("#sub_btn").removeAttr("disabled").val('提 交').css("cursor","pointer"); 
+                }else{ 
+                    $(".demo").html("<h3>"+msg+"</h3>"); 
+                } 
+            }); 
+        } 
+    }); 
+})
 </script>
 <script>
 function fleshVerify(){
 //重载验证码
- $('#verify_image').attr('src',"/index.php/Home/Sign-verify-flag-"+Math.floor(Math.random()*100));
+ $('#verify_image').attr('src',"/tp3/tp3_blog/index.php/Home/Sign-verify-flag-"+Math.floor(Math.random()*100))+".tpl";
+
 }
 </script>
 <!--插入验证用户信息ajax -->
-<script type="text/javascript" href="/tp3/tp3_blog/Public/js/ajax_login.js"></script>
 
 <!-- header -->
 <link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
@@ -87,67 +96,15 @@ function fleshVerify(){
 
 </head>
 <body>
-	<div class="main">
-		<div class="header" >
-			<h1><?php echo (L("sign")); ?></h1>
-                            <a href="<?php echo U('Sign/getUserInfo');?>"><img src="/tp3/tp3_blog/Public/images/login/wX.jpg" width="100" height="100"></a>
-		</div>
-		<p><?php echo (L("signNote")); ?></p>
-			<form action="<?php echo U('Sign/register');?>" method="post" enctype="multipart/form-data">
-				<ul class="left-form">
-					<h2><?php echo (L("signUp")); ?></h2>
-					<li onclick="test()">
-						<input type="text"   placeholder="<?php echo (L("userName")); ?>" name="user_name" onkeyup="user_volidate(this.value)"required/>
-						<div class="clear"> </div>
-					</li> 
-					<li>
-						<input type="text"   placeholder="<?php echo (L("email")); ?>" name="email" required/>
-						<div class="clear"> </div>
-					</li> 
-					<li>
-						<input type="password"   placeholder="<?php echo (L("password")); ?>" name="user_pwd" required/>
-						<!-- <a href="#" class="icon into"> </a> -->
-						<div class="clear"> </div>
-					</li> 
-					<li>
-						<input type="password"   placeholder="<?php echo (L("informPassword")); ?>" name="user_pwd" required/>
-						<!-- <a href="#" class="icon into"> </a> -->
-						<div class="clear"> </div>
-					</li> 
-					<li>
-					<b><p>选择您要上传的头像，若需更改请联系管理员</p></b>
-					    <input type="file"  name="user_image" placeholder="<?php echo (L("userImage")); ?>" required/>
-					    <div class="clear"> </div>
-					</li>
-					<li id="verify_check">
-					<input type="text" name="verify" placeholder="请输入验证码" required/>
-					<div class="clear"> </div>
-					<img id="verify_image" src="<?php echo U('Sign/verify',array('flag'=>1));?>"  onclick="fleshVerify()"/>
-					
-					</li>
-					
-					<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i><?php echo (L("passInform")); ?></label>
-					<div class="clear"> </div>
-					<input type="submit" onClick="myFunction()" value="<?php echo (L("create_account")); ?>">
-						<div class="clear"> </div>
-				</ul>
-                            </form>
-                <form action="<?php echo U('Sign/signIn');?>" method="post">
-				<ul class="right-form">
-					<h3><?php echo (L("login")); ?></h3>
-					<div>
-						<li><input type="text"  name="user_name" placeholder="<?php echo (L("userName")); ?>" required/></li>
-						<li> <input type="password"  name="user_pwd" placeholder="<?php echo (L("password")); ?>" required/></li>
-						<h4><?php echo (L("gorgetPass")); ?></h4>
-							<input type="submit" value="<?php echo (L("login_box")); ?>" >
-					</div>
-					<div class="clear"> </div>
-				</ul>
-				<div class="clear"> </div>
-					
-			</form>
-			
-		</div>
+<br /><br /><br />
+	<center><form action="">
+		<b><p>请输入注册时使用的邮箱账号：</p></b>
+		<input type="text" name="email" id="email" /><br /><br />
+		<img id="verify_image" src="<?php echo U('Sign/verify',array('flag'=>1));?>"  onclick="fleshVerify()"/>
+		<input type="submit" name="sub" value="找回密码"/>
+	</form>
+</center>
+<br /><br /><br />
 
 			<!--引入footer-->
 <!-- footer -->

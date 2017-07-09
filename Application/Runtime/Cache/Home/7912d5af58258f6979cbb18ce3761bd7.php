@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Single</title>
-<link href="/www/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
 <!-- jQuery (necessary JavaScript plugins) -->
 <script type='text/javascript' src="__PIBLIC__/js/jquery-1.11.1.min.js"></script>
@@ -18,8 +18,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!-- header -->
-<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
+<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -50,11 +50,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <ul class="nav navbar-nav">
 								 <li><a href="<?php echo U('Index/index');?>"><?php echo (L("index")); ?></a></li>
 								 <li class="dropdown active">
-									<a href="#" class="scroll dropdown-toggle" data-toggle="dropdown"><?php echo (L("reviews")); ?><b class="caret"></b></a>
-									<ul class="dropdown-menu">
+									
 										<li><a href="<?php echo U('Review/review');?>"><?php echo (L("review_1")); ?></a></li>
-										<li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("review_2")); ?></a></li>
-									</ul>
+										
+									
 								 </li>					
 								 <li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("gallery")); ?></a></li>
 								 <li><a href="<?php echo U('Sign/signIn');?>"><?php echo (L("sign")); ?></a></li>
@@ -66,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/tp3/tp3_blog/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -158,7 +157,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/tp3/tp3_blog/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

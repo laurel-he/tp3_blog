@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>Reviews</title>
-<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
-<link href="/www/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
+<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
 
 <!-- jQuery (necessary JavaScript plugins) -->
-<script type='text/javascript' src="/www/Public/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="/tp3/tp3_blog/Public/js/jquery-1.11.1.min.js"></script>
 <!-- Custom Theme files -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
 <!-- Custom Theme files -->
@@ -24,8 +24,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
     <!--引入header文件-->
 <!-- header -->
-<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
+<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -72,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/tp3/tp3_blog/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -82,114 +82,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <div class="review">
 	 <div class="container">
-		 <h2>Reviews</h2>
+		 <h2><?php echo (L("name")); ?></h2>
 		 <div class="review-sec">
 			 <div class="review-grids">
-				 <div class="col-md-6 revw">
+			 <?php if(is_array($content)): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cont): $mod = ($i % 2 );++$i;?><div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g7.jpg" class="img-responsive" alt=""/></a>
+							 <a href="<?php echo U('Single/single');?>"><img style="height:200px;width:200px;" src="<?php echo ($cont["blog_images"]); ?>" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
+							  <h4><a href="<?php echo U('Single/single');?>"><?php echo ($cont["blog_name"]); ?></a></h4>
+							 <p><?php echo (substr($cont["blog_content"],0,200)); ?></p>
 						 </div>
-						 <div class="clearfix"></div>
+						 <div class="clearfix"></div><br />
 					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g8.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
+				 </div><?php endforeach; endif; else: echo "" ;endif; ?>
+				 
 				 <div class="clearfix"></div>
 			 </div>
-			 <div class="review-grids">
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g2.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g1.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="review-grids">
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g3.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g4.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="review-grids">
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g6.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
-				 <div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-							 <a href="<?php echo U('Single/single');?>"><img src="/www/Public/images/g9.jpg" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single');?>">Sed perspiciatis omnis</a></h4>
-							 <p>Nulla suscipit commodo augue, at facilisis purus facilisis in. Praesent vel purus id urna mollis efficitur.</p>
-						 </div>
-						 <div class="clearfix"></div>
-					 </div>
-				 </div>
+			 
+			 	 </div>
 				 <div class="clearfix"></div>
 			 </div>
 		 </div>
@@ -220,7 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/tp3/tp3_blog/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>
