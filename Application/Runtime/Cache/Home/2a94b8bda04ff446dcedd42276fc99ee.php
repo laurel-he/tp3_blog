@@ -320,11 +320,11 @@
 			 <div class="col-md-3 ftr-grid">
 				 <h3><?php echo (L("foot_catogory")); ?></h3>
 				 <ul class="ftr-list">
-					 <li><a href="#"><?php echo (L("php")); ?></a></li>
-					 <li><a href="#"><?php echo (L("js")); ?></a></li>
-					 <li><a href="#"><?php echo (L("life")); ?></a></li>
-					 <li><a href="#"><?php echo (L("novel")); ?></a></li>
-					 <li><a href="#"><?php echo (L("others")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>0));?>"><?php echo (L("php")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>1));?>"><?php echo (L("js")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>2));?>"><?php echo (L("life")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>3));?>"><?php echo (L("novel")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>4));?>"><?php echo (L("others")); ?></a></li>
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">

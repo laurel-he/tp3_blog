@@ -33,4 +33,30 @@ else
 	
 }
     }
+    public function blog($kind=0)
+    {
+    	$Blog = M('Blog');
+    	switch ($kind) {
+    		case 0:
+    			$result = $Blog->where('blog_group='."'PHP'")->select();
+    			break;
+    		case 1:
+    			$result = $Blog->where('blog_group='."'JS'")->select();
+    			break;
+    		case 2:
+    			$result = $Blog->where('blog_group='."'生活'")->select();
+    			break;
+    		case 3:
+    			$result = $Blog->where('blog_group='."'小说'")->select();
+    			break;
+    		case 4:
+    		$result = $Blog->where('blog_group='."'其他'")->select();
+    			break;
+    		default:
+    			$result = $Blog->where('blog_group='."'PHP'")->select();
+    			break;
+    	}
+    	$this->assign('result',$result);
+    	$this->display();
+    }
 }

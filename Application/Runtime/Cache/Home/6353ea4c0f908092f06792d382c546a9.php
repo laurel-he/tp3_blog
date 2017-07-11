@@ -1,12 +1,17 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-<title>Single</title>
-<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<title>Reviews</title>
+<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
+<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
+
 <!-- jQuery (necessary JavaScript plugins) -->
-<script type='text/javascript' src="__PIBLIC__/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="/tp3/tp3_blog/Public/js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
+<!-- Custom Theme files -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,6 +22,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   
 </head>
 <body>
+    <!--引入header文件-->
 <!-- header -->
 <link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
 <link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
@@ -74,66 +80,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!---->
 
-<!---->
-
-<div class="container" style="height:auto">
-				<div class="single">
-					<div class="blog-to">		
-					
-							<div class="blog-top">
-							<div class="blog-left">
-								<b>23</b>
-								<span><?php echo ($build["blog_time"]); ?></span>
-							</div>
-							<div class="top-blog">
-								<a class="fast" href="#"><?php echo ($build["blog_time"]); ?></a>
-								<p><?php echo (L("posted")); ?><a href="#"><?php echo ($build["blog_author"]); ?></a><?php echo (L("group")); ?><a href="#"><?php echo ($build["blog_group"]); ?></a> | <a href="#"><?php echo ($number); echo (L("comments")); ?></a></p>
-								
-						<img class="img-responsive sin-on" src="<?php echo ($build["blog_images"]); ?>" alt="" height="200" width="400"/> 
-								<p class="sed"><?php echo ($build["blog_name"]); ?></p> 
-									 <p><?php echo ($build["blog_content"]); ?></p>
-						<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-					</div>
-					</div>
-						
-					
-				
-		<div class="single-middle">
-			
-			<h3><?php echo (L("hot")); ?></h3>
-			<!-- 循环输出评论内容 -->
-<?php if(is_array($message)): $i = 0; $__LIST__ = array_slice($message,0,5,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$com0): $mod = ($i % 2 );++$i;?><div class="media">
-				  <div class="media-left">
-					<a href="#">
-					  <img class="media-object" src="<?php echo ($com0["avatar"]); ?>" alt="" width="65" height="65">
-					</a>
-				  </div>
-				  <div class="media-body">
-					<h4 class="media-heading"><a href="#"><?php echo ($com0["name"]); ?></a></h4>
-						<p><?php echo ($com0["message"]); ?></p>
-				  </div>
-				</div><?php endforeach; endif; else: echo "" ;endif; ?>
-
-			
-		</div>
-		<!---->
-		<div class="single-bottom">
-<!-- 点击后可以查看所有评论 -->
-<div><a href="<?php echo U('Comments/read',array('id'=>$id));?>">查看更多</a></div>	
-<h3><?php echo (L("userName")); ?>:<?php echo ($user_name); ?></h3>	
-			<h3><?php echo (L("comments")); ?></h3>
-				<form action="<?php echo U('Comments/add');?>" method="post">
-				<input type="hidden" name="blog_id" value="<?php echo ($id); ?>" />
-				<input type="hidden" name="name" value="<?php echo cookie('user_name');?>" /> 
-					<textarea name="message" cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '<?php echo (L("content")); ?>';}"><?php echo (L("content")); ?></textarea>						
-							<input type="submit" value="<?php echo (L("send")); ?>" >				
-				</form>
-			</div>
-		</div>
+<div class="review">
+	 <div class="container">
+		 <h2><?php echo (L("name")); ?></h2>
+		 <div class="review-sec">
+			 <div class="review-grids">
+			 <?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cont): $mod = ($i % 2 );++$i;?><div class="col-md-6 revw">
+					 <div class="rft-grid">
+						 <div class="col-md-5 rft-pic">
+							 <a href="<?php echo U('Single/single');?>"><img style="height:200px;width:200px;" src="<?php echo ($cont["blog_images"]); ?>" class="img-responsive" alt=""/></a>
+						 </div>
+						 <div class="col-md-7 rft-pic-info">
+							  <h4><a href="<?php echo U('Single/single');?>"><?php echo ($cont["blog_name"]); ?></a></h4>
+							 <p><?php echo (substr($cont["blog_content"],0,200)); ?></p>
+						 </div>
+						 <div class="clearfix"></div><br />
+					 </div>
+				 </div><?php endforeach; endif; else: echo "" ;endif; ?>
+				 
+				 <div class="clearfix"></div>
+			 </div>
+			 
+			 	 </div>
+				 <div class="clearfix"></div>
+			 </div>
+		 </div>
+	 </div>
 </div>
-
 <!--引入footer-->
 <!-- footer -->
 <div class="footer">
@@ -175,6 +148,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </body>
 </html>
-
 </body>
 </html>
