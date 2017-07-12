@@ -62,9 +62,14 @@
 									<ul class="dropdown-menu">
 										<li><a href="{$reviewUrl}">{$Think.lang.review_1}</a></li>
 										<li><a href="{$galleryUrl}">{$Think.lang.review_2}</a></li>
+									
 									</ul>
-								 </li>					
+								 </li>
+								 <if condition="cookie('user_name') eq 'admin'">
+										<li><a href="{:U('Blog/add')}">{$Think.lang.review_3}</a></li>
+									<else />						
 								 <li><a href="{$galleryUrl}">{$Think.lang.gallery}</a></li>
+								 </if>
 								 <li><a href="{$signUrl}">{$Think.lang.sign}</a></li>
 								  <li><a href="{:U('Sign/logout')}">{$Think.lang.logout}</a></li>
 							 </ul>

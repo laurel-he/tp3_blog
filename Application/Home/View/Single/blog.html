@@ -29,14 +29,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <h2>{$Think.lang.name}</h2>
 		 <div class="review-sec">
 			 <div class="review-grids">
+			 <!--数据来源：SingleController-->
 			 <volist name="result" id="cont">
 			 <div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-							 <a href="{:U('Single/single')}"><img style="height:200px;width:200px;" src="{$cont.blog_images}" class="img-responsive" alt=""/></a>
+						
+							 <a href="{:U('Single/single',array('id'=>$cont['blog_id']))}"><img style="height:200px;width:200px;" src="{$cont.blog_images}" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="{:U('Single/single')}">{$cont.blog_name}</a></h4>
+							  <h4><a href="{:U('Single/single',array('id'=>$cont['blog_id']))}">{$cont.blog_name}</a></h4>
 							 <p>{$cont.blog_content|substr=0,200}</p>
 						 </div>
 						 <div class="clearfix"></div><br />

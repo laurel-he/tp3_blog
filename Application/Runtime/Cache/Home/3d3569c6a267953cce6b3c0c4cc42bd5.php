@@ -1,28 +1,16 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-<title>Reviews</title>
-<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
-<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<title>Single</title>
+<script type='text/javascript' src="__PIBLIC__/js/jquery-1.11.1.min.js"></script>
+<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
-
 <!-- jQuery (necessary JavaScript plugins) -->
-<script type='text/javascript' src="/tp3/tp3_blog/Public/js/jquery-1.11.1.min.js"></script>
-<!-- Custom Theme files -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
-<!-- Custom Theme files -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Game Spot Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
 </head>
 <body>
-    <!--引入header文件-->
 <!-- header -->
 <link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
 <link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
@@ -59,12 +47,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<a href="#" class="scroll dropdown-toggle" data-toggle="dropdown"><?php echo (L("reviews")); ?><b class="caret"></b></a>
 									<ul class="dropdown-menu">
 										<li><a href="<?php echo U('Review/review');?>"><?php echo (L("review_1")); ?></a></li>
-										<li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("review_2")); ?></a></li>
+										<?php if(cookie('user_name') == 'admin'): ?><li><a href="<?php echo U('Blog/add');?>"><?php echo (L("review_3")); ?></a></li>
+									<?php else: ?>						
+								 <li><a href="<?php echo ($galleryUrl); ?>"><?php echo (L("gallery")); ?></a></li><?php endif; ?>
 									</ul>
 								 </li>					
-								 <?php if(cookie('user_name') == 'admin'): ?><li><a href="<?php echo U('Blog/add');?>"><?php echo (L("review_3")); ?></a></li>
-									<?php else: ?>						
-								 <li><a href="<?php echo ($galleryUrl); ?>"><?php echo (L("gallery")); ?></a></li><?php endif; ?><li><a href="<?php echo U('Sign/signIn');?>"><?php echo (L("sign")); ?></a></li>
+								 <li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("gallery")); ?></a></li>
+								 <li><a href="<?php echo U('Sign/signIn');?>"><?php echo (L("sign")); ?></a></li>
                                                                  <li><a href="<?php echo U('Sign/logout');?>"><?php echo (L("logout")); ?></a></li>
 							 </ul>
 							</div>
@@ -81,35 +70,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!---->
 
-<div class="review">
-	 <div class="container">
-		 <h2><?php echo (L("name")); ?></h2>
-		 <div class="review-sec">
-			 <div class="review-grids">
-			 <!--数据来源：SingleController-->
-			 <?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cont): $mod = ($i % 2 );++$i;?><div class="col-md-6 revw">
-					 <div class="rft-grid">
-						 <div class="col-md-5 rft-pic">
-						 <h1><?php echo ($cont["blog_id"]); ?></h1>
-							 <a href="<?php echo U('Single/single',array('id'=>$cont['blog_id']));?>"><img style="height:200px;width:200px;" src="<?php echo ($cont["blog_images"]); ?>" class="img-responsive" alt=""/></a>
-						 </div>
-						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single?id='.$cont.blog_id);?>"><?php echo ($cont["blog_name"]); ?></a></h4>
-							 <p><?php echo (substr($cont["blog_content"],0,200)); ?></p>
-						 </div>
-						 <div class="clearfix"></div><br />
-					 </div>
-				 </div><?php endforeach; endif; else: echo "" ;endif; ?>
-				 
-				 <div class="clearfix"></div>
-			 </div>
-			 
-			 	 </div>
-				 <div class="clearfix"></div>
-			 </div>
-		 </div>
-	 </div>
+<!---->
+<center>
+	<form action="<?php echo U('Blog/add');?>" method="post" enctype="multipart/form-data">
+
+<p>请选择博客封面：<input type="file" name="blog_images" /></p>
+<p>请选择博客分组：<select name="blog_group" id="">
+	<option value="PHP">PHP</option>
+	<option value="JS">JS</option>
+	<option value="生活">生活</option>
+	<option value="小说">小说</option>
+	<option value="其他">其他</option>
+</select></p>
+		<div>
+	<div><p style="font-size: 40px;color: rgba(13,233,245,0.6);"><?php echo (L("add_blogTitle")); ?></p></div>
+	<input type="text" name="blog_name" style="width: 700px;height: 50px;font-size: 24px;" />
+	<br /><br /><br />
 </div>
+<div><p style="font-size: 40px;color: rgba(13,233,245,0.6);"><?php echo (L("add_blogContent")); ?></p></div>
+<textarea name="content" id="blog_content" style="width: 700px;height: 300px;font-size: 20px;">
+	
+</textarea>
+<br />
+<input type="submit" style="width: 400px;height: 50px;" />
+	</form>
+</center>
 <!--引入footer-->
 <!-- footer -->
 <div class="footer">
@@ -151,5 +136,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </body>
 </html>
+
 </body>
 </html>

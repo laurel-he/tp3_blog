@@ -6,6 +6,7 @@ return array(
     'reviews'=>'查看',
     'review_1'=>'查看博客',
     'review_2'=>'查看相册',
+    'review_3'=>'添加博客',
     'gallery'=>'相册',
     'sign'=>'注册/登陆',
 	'login'=>'登录',
@@ -25,7 +26,7 @@ return array(
     //大段内容
     'title_1'=>'我的座右铭',
     'motto'=>'本网站基于ThinkPHP框架，html页面来源于网络资源，逻辑全部由本人所写，我正在找工作，有一年工作经验（包括实习和在学校做项目），望给予我一个面试机会，愿意从底层做起，谢谢！',
-    'signNote'=>'如果有账号请直接右侧登陆，没有账号请注册，游客可以用账号:huahua密码:123456登陆',
+    'signNote'=>'如果有账号请直接右侧登陆，没有账号请注册，游客用账号:huahua密码:123456登陆',
     'signIn'=>'登陆',
     'signUp'=>'注册:',
     'userName'=>'用户名',
@@ -52,5 +53,8 @@ return array(
 	'hot'=>'热评前五',
 	'group'=>'分组：',
 	'userImage'=>'上传头像',
+    'add_blogTitle'=>'输入博客标题',
+    'add_blogContent'=>'输入博客内容',
+
 );
 ?>

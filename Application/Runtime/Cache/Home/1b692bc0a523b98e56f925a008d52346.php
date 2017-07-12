@@ -62,8 +62,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("review_2")); ?></a></li>
 									</ul>
 								 </li>					
-								 <li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("gallery")); ?></a></li>
-								 <li><a href="<?php echo U('Sign/signIn');?>"><?php echo (L("sign")); ?></a></li>
+								 <?php if(cookie('user_name') == 'admin'): ?><li><a href="<?php echo U('Blog/add');?>"><?php echo (L("review_3")); ?></a></li>
+									<?php else: ?>						
+								 <li><a href="<?php echo ($galleryUrl); ?>"><?php echo (L("gallery")); ?></a></li><?php endif; ?><li><a href="<?php echo U('Sign/signIn');?>"><?php echo (L("sign")); ?></a></li>
                                                                  <li><a href="<?php echo U('Sign/logout');?>"><?php echo (L("logout")); ?></a></li>
 							 </ul>
 							</div>
@@ -124,11 +125,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="col-md-3 ftr-grid">
 				 <h3><?php echo (L("foot_catogory")); ?></h3>
 				 <ul class="ftr-list">
-					 <li><a href="#"><?php echo (L("php")); ?></a></li>
-					 <li><a href="#"><?php echo (L("js")); ?></a></li>
-					 <li><a href="#"><?php echo (L("life")); ?></a></li>
-					 <li><a href="#"><?php echo (L("novel")); ?></a></li>
-					 <li><a href="#"><?php echo (L("others")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>0));?>"><?php echo (L("php")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>1));?>"><?php echo (L("js")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>2));?>"><?php echo (L("life")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>3));?>"><?php echo (L("novel")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>4));?>"><?php echo (L("others")); ?></a></li>
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">

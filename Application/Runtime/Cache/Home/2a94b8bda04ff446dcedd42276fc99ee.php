@@ -62,9 +62,12 @@
 									<ul class="dropdown-menu">
 										<li><a href="<?php echo ($reviewUrl); ?>"><?php echo (L("review_1")); ?></a></li>
 										<li><a href="<?php echo ($galleryUrl); ?>"><?php echo (L("review_2")); ?></a></li>
+									
 									</ul>
-								 </li>					
-								 <li><a href="<?php echo ($galleryUrl); ?>"><?php echo (L("gallery")); ?></a></li>
+								 </li>
+								 <?php if(cookie('user_name') == 'admin'): ?><li><a href="<?php echo U('Blog/add');?>"><?php echo (L("review_3")); ?></a></li>
+									<?php else: ?>						
+								 <li><a href="<?php echo ($galleryUrl); ?>"><?php echo (L("gallery")); ?></a></li><?php endif; ?>
 								 <li><a href="<?php echo ($signUrl); ?>"><?php echo (L("sign")); ?></a></li>
 								  <li><a href="<?php echo U('Sign/logout');?>"><?php echo (L("logout")); ?></a></li>
 							 </ul>

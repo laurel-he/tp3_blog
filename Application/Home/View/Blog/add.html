@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Single</title>
+<script type='text/javascript' src="__PIBLIC__/js/jquery-1.11.1.min.js"></script>
+<link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="__PUBLIC__/css/style.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+</head>
+<body>
+<include file="./Application/Home/Common/header.html" />
+<!---->
+<center>
+	<form action="{:U('Blog/add')}" method="post" enctype="multipart/form-data">
+
+<p>请选择博客封面：<input type="file" name="blog_images" /></p>
+<p>请选择博客分组：<select name="blog_group" id="">
+	<option value="PHP">PHP</option>
+	<option value="JS">JS</option>
+	<option value="生活">生活</option>
+	<option value="小说">小说</option>
+	<option value="其他">其他</option>
+</select></p>
+		<div>
+	<div><p style="font-size: 40px;color: rgba(13,233,245,0.6);">{$Think.lang.add_blogTitle}</p></div>
+	<input type="text" name="blog_name" style="width: 700px;height: 50px;font-size: 24px;" />
+	<br /><br /><br />
+</div>
+<div><p style="font-size: 40px;color: rgba(13,233,245,0.6);">{$Think.lang.add_blogContent}</p></div>
+<textarea name="content" id="blog_content" style="width: 700px;height: 300px;font-size: 20px;">
+	
+</textarea>
+<br />
+<input type="submit" style="width: 400px;height: 50px;" />
+	</form>
+</center>
+<!--引入footer-->
+<include file="./Application/Home/Common/footer.html" />
+
+</body>
+</html>

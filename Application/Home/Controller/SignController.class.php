@@ -59,8 +59,6 @@ class SignController extends Controller {
             if($verify_answer)
             {
             if ($id = $user->add($data)) {
-                /* 直接注册用户为超级管理员,子用户采用邀请注册的模式,
-                   遂设置公司id等于注册用户id,便于管理公司用户*/
                 $user->where("user_id = $id")->setField('companyid', $id);             
                 $this->success('注册成功', U('Sign/signIn'), 2);
             } else {

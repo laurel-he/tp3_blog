@@ -25,6 +25,7 @@
 		<div id="container">
 			<form action="<?php echo U('Sign/signIn');?>" method="post">
 				<div class="login"><?php echo (L("login")); ?></div>
+				<p><?php echo (L("signNote")); ?></p>
 				<div class="username-text">用户名：</div>
 				<div class="password-text">密码：</div>
 				<div class="username-field">
