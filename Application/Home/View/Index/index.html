@@ -132,7 +132,7 @@
 							 <img src="{$cont.blog_images}" class="img-responsive" alt=""/>
 							 <div class="grid1-info">
 								 <h4><a href="{:U('Single/single',array('id'=>1))}">{$cont['blog_name']}</a></h4>
-								 <p>{$cont[blog_content]|substr=0,62}</p>								 
+								 <p>{$cont[blog_content]|msubstr=0,62}</p>								 
 							 </div>
 							 <div class="more">
 							 <a href="{:U('Single/single',array('id'=>1))}">{$Think.lang.read_more}</a>
