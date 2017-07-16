@@ -35,7 +35,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 						<img class="img-responsive sin-on" src="{$build.blog_images}" alt="" height="200" width="400"/> 
 								<p class="sed">{$build.blog_name}</p> 
-									 <p>{$build.blog_content}</p>
+									 
+									{$build.blog_content|htmlspecialchars_decode}
+									 
 						<div class="clearfix"> </div>
 							</div>
 							<div class="clearfix"> </div>

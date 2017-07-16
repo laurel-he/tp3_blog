@@ -8,7 +8,34 @@
 <!-- jQuery (necessary JavaScript plugins) -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="__PUBLIC__/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="__PUBLIC__/editor/plugins/code/prettify.css" />
+	<script charset="utf-8" src="__PUBLIC__/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/editor/lang/zh-CN.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/editor/plugins/code/prettify.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content"]', {
+				cssPath : '__PUBLIC__/editor/plugins/code/prettify.css',
+				uploadJson : '__PUBLIC__/editor/php/upload_json.php',
+				fileManagerJson : '__PUBLIC__/editor/php/file_manager_json.php',
+				allowFileManager : true,
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						K('form[name=example]')[0].submit();
+					});
+				}
+			});
+			prettyPrint();
+		});
+	</script>
 </head>
 <body>
 <include file="./Application/Home/Common/header.html" />
@@ -30,10 +57,8 @@
 	<br /><br /><br />
 </div>
 <div><p style="font-size: 40px;color: rgba(13,233,245,0.6);">{$Think.lang.add_blogContent}</p></div>
-<textarea name="content" id="blog_content" style="width: 700px;height: 300px;font-size: 20px;">
-	
-</textarea>
-<br />
+<textarea name="content" id="blog_content" style="width:700px;height:200px;visibility:hidden;"><?php echo htmlspecialchars($htmlData); ?></textarea>
+		<br /><br />
 <input type="submit" style="width: 400px;height: 50px;" />
 	</form>
 </center>
