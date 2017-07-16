@@ -90,12 +90,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cont): $mod = ($i % 2 );++$i;?><div class="col-md-6 revw">
 					 <div class="rft-grid">
 						 <div class="col-md-5 rft-pic">
-						 <h1><?php echo ($cont["blog_id"]); ?></h1>
+						
 							 <a href="<?php echo U('Single/single',array('id'=>$cont['blog_id']));?>"><img style="height:200px;width:200px;" src="<?php echo ($cont["blog_images"]); ?>" class="img-responsive" alt=""/></a>
 						 </div>
 						 <div class="col-md-7 rft-pic-info">
-							  <h4><a href="<?php echo U('Single/single?id='.$cont.blog_id);?>"><?php echo ($cont["blog_name"]); ?></a></h4>
-							 <p><?php echo (substr($cont["blog_content"],0,200)); ?></p>
+							  <h4><a href="<?php echo U('Single/single',array('id'=>$cont['blog_id']));?>"><?php echo ($cont["blog_name"]); ?></a></h4>
+							 <p><?php echo (msubstr($cont["blog_content"],0,200)); ?></p>
 						 </div>
 						 <div class="clearfix"></div><br />
 					 </div>

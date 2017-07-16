@@ -22,7 +22,11 @@ class IndexController extends Controller {
         $Blog = M('Blog');
         $content = $Blog->limit(4)->select();
         $this->assign('content',$content);
-        
+        $hot_rank = $Blog->order('praise desc')->limit('3')->select();
+        $time_rank=  $Blog->order('blog_time desc')->limit('3')->select();
+        $this->assign('hot_rank',$hot_rank);
+        $this->assign('time_rank',$time_rank);
+
         $user_session = cookie('user_name');
         if($user_session)
         {
@@ -37,6 +41,7 @@ class IndexController extends Controller {
         $this->assign('rank',$rank);
         $this->display();
     }
+ 
  
  public function set_exit()
  {

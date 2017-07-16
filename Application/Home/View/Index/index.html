@@ -194,68 +194,33 @@
                <!-- Tab panes -->
               <div class="tab-content">
 						<div role="tabpanel" class="tab-pane active re-pad2" id="home">
-						   <div class="game1">
-								<div class="col-md-3 tab-pic">
-									<a href="{$singleUrl}"><img src="__PUBLIC__/images/tr1.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-pic-info">
-								<h4><a href="{$singleUrl}">Angry Birds</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
+						   <volist name='hot_rank' id='hot'>
 							<div class="game1">
 								<div class="col-md-3 tab-pic">
-									<a href="{$singleUrl}"><img src="__PUBLIC__/images/tr3.jpg" alt="/" class="img-responsive"></a>
+									<a href="{:U('Single/single',array('id'=>$hot['blog_id']))}"><img src="{$hot.blog_images}" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-pic-info">
-								<h4><a href="{$singleUrl}">Vice City GTA</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-								</div>                                                                                                                                                                                                                     
-								<div class="clearfix"></div>
-							</div>
-							<div class="game1">
-								<div class="col-md-3 tab-pic">
-									<a href="{$singleUrl}"><img src="__PUBLIC__/images/tr2.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-pic-info">
-								<h4><a href="{$singleUrl}">Call Of Duty</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+								<h4><a href="{:U('Single/single',array('id'=>$hot['blog_id']))}">{$hot.blog_name}</a></h4>
+								<p>{$hot.blog_content|substr=0,30}</p>
 								</div>
 								<div class="clearfix"></div>
 							</div>
+							</volist>
 						</div>
 						<div role="tabpanel" class="tab-pane re-pad2" id="profile">
+							
+						<volist name="time_rank" id="time">
 							<div class="game-post">
 								<div class="col-md-3 tab-pic">
-									<a href="{$singleUrl}"><img src="__PUBLIC__/images/tr4.jpg" alt="/" class="img-responsive"></a>
+									<a href="{:U('Single/single',array('id'=>$time['blog_id']))}"><img src="{$time.blog_images}" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-post-info">
-								<h4><a href="{$singleUrl}">IronMan</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
+								<h4><a href="{:U('Single/single',array('id'=>$time['blog_id']))}">{$time.blog_name}</a></h4>
+								<p>Posted By <a href="#">{$time.blog_author}</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
 								</div>
 								<div class="clearfix"></div>
 							</div>
-							<div class="game-post">
-								<div class="col-md-3 tab-pic">
-									<a href="{$singleUrl}"><img src="__PUBLIC__/images/tr5.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-post-info">
-								<h4><a href="{$singleUrl}">God Of War</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="game-post">
-								<div class="col-md-3 tab-pic">
-									<a href="{$singleUrl}"><img src="__PUBLIC__/images/tr6.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-post-info">
-								<h4><a href="{$singleUrl}">Need For Speed</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
+							</volist>
 						</div>                   
 			 </div>
 			 <!---->
