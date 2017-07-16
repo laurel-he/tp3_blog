@@ -41,7 +41,9 @@
 										<li><a href="{:U('Blog/add')}">{$Think.lang.review_3}</a></li>
 									<else />						
 								 <li><a href="{$galleryUrl}">{$Think.lang.gallery}</a></li>
-								 </if><li><a href="{:U('Sign/signIn')}">{$Think.lang.sign}</a></li>
+								 </if><if condition="cookie('user_name') eq ''">
+								 <li><a href="{$signUrl}">{$Think.lang.sign}</a></li>
+								 </if>
                                                                  <li><a href="{:U('Sign/logout')}">{$Think.lang.logout}</a></li>
 							 </ul>
 							</div>
