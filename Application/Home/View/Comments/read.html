@@ -25,9 +25,13 @@
 				  </div>
 				  <div class="media-body">
 					<h4 class="media-heading"><a href="#">{$data_info.name}</a></h4>
-						<p>{$data_info.message}</p>
+						<p>{$data_info.message}</p>	
+						<if condition="cookie('user_name') eq $data_info['name']">
+							<a href="{:U('Single/delete',array('id'=>$data_info['id']))}">删除评论</a>
+						</if>
+
 				  </div>
-				</div>
+				  				</div>
 <hr /><hr />
       </foreach>
 

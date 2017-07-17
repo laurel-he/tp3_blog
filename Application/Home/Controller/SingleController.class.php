@@ -59,4 +59,14 @@ else
     	$this->assign('result',$result);
     	$this->display();
     }
+    public function delete()
+    {
+        $id = I('get.id',0);
+        $Comments = M('Comments');
+        $res = $Comments->where('id='.$id)->delete();
+        if($res)
+        {
+            $this->success('删除成功');
+        }
+    }
 }

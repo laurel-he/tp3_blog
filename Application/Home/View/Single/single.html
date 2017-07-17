@@ -60,6 +60,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <div class="media-body">
 					<h4 class="media-heading"><a href="#">{$com0.name}</a></h4>
 						<p>{$com0.message}</p>
+						<if condition="cookie('user_name') eq $com0['name']">
+							<a href="{:U('Single/delete',array('id'=>$com0['id']))}">删除评论</a>
+						</if>
 				  </div>
 				</div>
 </volist>

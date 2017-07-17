@@ -218,7 +218,7 @@
 								</div>
 								<div class="col-md-9 tab-post-info">
 								<h4><a href="{:U('Single/single',array('id'=>$time['blog_id']))}">{$time.blog_name}</a></h4>
-								<p>Posted By <a href="#">{$time.blog_author}</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
+								<p>Posted By <a href="#">{$time.blog_author}</a> &nbsp;&nbsp; on {$time.blog_time|strtotime|date='Y-m-d H:i:s',###} &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
 								</div>
 								<div class="clearfix"></div>
 							</div>
