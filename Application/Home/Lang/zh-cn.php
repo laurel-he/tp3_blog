@@ -55,6 +55,7 @@ return array(
 	'userImage'=>'上传头像',
     'add_blogTitle'=>'输入博客标题',
     'add_blogContent'=>'输入博客内容',
+    'cure'=>'治愈',
 
 );
 ?>

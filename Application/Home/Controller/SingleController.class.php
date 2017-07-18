@@ -41,7 +41,7 @@ else
     			$result = $Blog->where('blog_group='."'PHP'")->select();
     			break;
     		case 1:
-    			$result = $Blog->where('blog_group='."'JS'")->select();
+    			$result = $Blog->where('blog_group='."'治愈'")->select();
     			break;
     		case 2:
     			$result = $Blog->where('blog_group='."'生活'")->select();
