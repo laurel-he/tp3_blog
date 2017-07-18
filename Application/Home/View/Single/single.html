@@ -14,7 +14,17 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-  
+<script>
+	function praise()
+	{
+
+	}
+	function hate()
+	{
+		
+	}
+
+</script>
 </head>
 <body>
 <include file="./Application/Home/Common/header.html" />
@@ -60,13 +70,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <div class="media-body">
 					<h4 class="media-heading"><a href="#">{$com0.name}</a></h4>
 						<p>{$com0.message}</p>
+						<p>点赞数：{$com0.praise}</p>
 						<if condition="cookie('user_name') eq $com0['name']">
 							<a href="{:U('Single/delete',array('id'=>$com0['id']))}">删除评论</a>
 						</if>
 						<div id="praise">
-						<span class="user_praise"></span>
-						<span class="user_hate"></span>
-						<span class="user_like"></span></div>
+						<ul>
+							<li><a href="Single/praise" onclick="praise()"> <span class="user_praise"></span></a></li>
+							<li><a href="Single/hate" onclick="hate()"> <span class="user_hate"></span></a></li>
+						</ul>
+
 				  </div>
 				</div>
 </volist>

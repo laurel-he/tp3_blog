@@ -33,6 +33,29 @@ else
 	
 }
     }
+
+    //实现点赞功能
+     public function zan(){
+        $data['id']=isset($_POST['id'])?intval(trim($_POST['id'])):0;
+        $obj = M("Comments");
+ 
+        if(!isset($_COOKIE[$_POST['id']+10000])&&$obj->where($data)->setInc('zan')){
+            $cookiename = $_POST['id']+10000;
+            setcookie($cookiename,40,time()+60,'/'); 
+ 
+            $data['info'] = "ok";
+            $data['status'] = 1;
+            $this->ajaxReturn($data);
+             
+            exit();
+        }else{
+            $data['info'] = "fail";
+            $data['status'] = 0;
+            $this->ajaxReturn($data);
+            exit();
+        }
+         
+    }
     public function blog($kind=0)
     {
     	$Blog = M('Blog');
