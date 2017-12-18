@@ -2,15 +2,15 @@
 <html>
 <head>
 		<meta charset="utf-8">
-		<link href="/tp3/tp3_blog/Public/css/login_style.css" rel='stylesheet' type='text/css' />
+		<link href="/Public/css/login_style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
-<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="/tp3/tp3_blog/Public/css/lightbox.css">
-<script type='text/javascript' src="/tp3/tp3_blog/Public/js/jquery-1.11.1.min.js"></script>
+<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/Public/images/fivicon.ico" />
+<link href="/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/Public/css/lightbox.css">
+<script type='text/javascript' src="/Public/js/jquery-1.11.1.min.js"></script>
     <script>
 $('#user_name').blur(
         function(){
@@ -26,11 +26,11 @@ function fleshVerify(){
 }
 </script>
 <!--插入验证用户信息ajax -->
-<script type="text/javascript" href="/tp3/tp3_blog/Public/js/ajax_login.js"></script>
+<script type="text/javascript" href="/Public/js/ajax_login.js"></script>
 
 <!-- header -->
-<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
+<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -67,8 +67,9 @@ function fleshVerify(){
 										<li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("review_2")); ?></a></li>
 									</ul>
 								 </li>					
-								 <li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("gallery")); ?></a></li>
-								 <li><a href="<?php echo U('Sign/signIn');?>"><?php echo (L("sign")); ?></a></li>
+								 <?php if(cookie('user_name') == 'admin'): ?><li><a href="<?php echo U('Blog/add');?>"><?php echo (L("review_3")); ?></a></li>
+									<?php else: ?>						
+								 <li><a href="{Gallery/gallery}"><?php echo (L("gallery")); ?></a></li><?php endif; if(cookie('user_name') == ''): ?><li><a href="<?php echo U('Sign/signUp');?>"><?php echo (L("sign")); ?></a></li><?php endif; ?>
                                                                  <li><a href="<?php echo U('Sign/logout');?>"><?php echo (L("logout")); ?></a></li>
 							 </ul>
 							</div>
@@ -77,7 +78,7 @@ function fleshVerify(){
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/tp3/tp3_blog/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -90,7 +91,7 @@ function fleshVerify(){
 	<div class="main">
 		<div class="header" >
 			<h1><?php echo (L("sign")); ?></h1>
-                            <a href="<?php echo U('Sign/getUserInfo');?>"><img src="/tp3/tp3_blog/Public/images/login/wX.jpg" width="100" height="100"></a>
+                            <a href="<?php echo U('Sign/getUserInfo');?>"><img src="/Public/images/login/wX.jpg" width="100" height="100"></a>
 		</div>
 		<p><?php echo (L("signNote")); ?></p>
 			<form action="<?php echo U('Sign/register');?>" method="post" enctype="multipart/form-data">
@@ -150,31 +151,38 @@ function fleshVerify(){
 		</div>
 
 			<!--引入footer-->
+<link rel="stylesheet" href="/Public/flipcountdown/jquery.flipcountdown.css" />
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="/Public/flipcountdown/jquery.flipcountdown.js"></script>
+<script>
+	$(function()
+	{
+		$('#flipcountdown_01').flipcountdown({
+			size:"lg"
+		});
+	});
+</script>
 <!-- footer -->
 <div class="footer">
 	 <div class="container">
+	 
 		 <div class="footer-grids">
-			 <div class="col-md-6 news-ltr">
-				 <h4>Connection</h4>
-				 <p>If you have any userful suggestion or infomation,you can contact me by enter your email or other way to connect you, thank you!</p>
-				 <form action="" method="post">					 
-					  <input type="text" class="text" value="Enter suggestion" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Email';}">
-					 <input type="submit" value="<?php echo (L("send")); ?>">
-					 <div class="clearfix"></div>
-				 </form>			 
+			 <div class="col-md-6 news-ltr" id="flipcountdown_01">
+				 		 <h4>&nbsp;&nbsp;&nbsp;&nbsp;这是基于ThinkPHP3.2.3的个人博客，接下来很长一段时间我要学习新的技术，并且同时我想好好学学phtotoshop，本博客暂停更新</h4>
 			 </div>
+
 			 <div class="col-md-3 ftr-grid">
 				 <h3><?php echo (L("foot_catogory")); ?></h3>
 				 <ul class="ftr-list">
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>0));?>"><?php echo (L("php")); ?></a></li>
-					 <li><a href="<?php echo U('Single/blog',array('kind'=>1));?>"><?php echo (L("js")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>1));?>"><?php echo (L("cure")); ?></a></li>
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>2));?>"><?php echo (L("life")); ?></a></li>
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>3));?>"><?php echo (L("novel")); ?></a></li>
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>4));?>"><?php echo (L("others")); ?></a></li>
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/tp3/tp3_blog/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

@@ -1,0 +1,18 @@
+[ 2017-11-30T00:55:46+08:00 ] 108.59.8.80 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+ERR: 无法加载模块:Robots
+
+[ 2017-11-30T14:49:30+08:00 ] 88.198.23.179 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+ERR: 无法加载模块:Robots
+
+[ 2017-11-30T18:26:22+08:00 ] 54.205.218.214 /Public/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+ERR: 无法加载模块:Public
+

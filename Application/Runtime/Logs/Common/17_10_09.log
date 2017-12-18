@@ -1,0 +1,12 @@
+[ 2017-10-09T15:32:39+08:00 ] 167.114.174.95 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+ERR: 无法加载模块:Robots
+
+[ 2017-10-09T15:32:40+08:00 ] 167.114.174.95 /sitemap.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+ERR: 无法加载模块:Sitemap
+

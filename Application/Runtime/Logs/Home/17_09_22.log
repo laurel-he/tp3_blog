@@ -1,0 +1,1183 @@
+[ 2017-09-22T18:52:26+08:00 ] 104.192.74.30 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002046s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006920s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_blog` LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_blog` ORDER BY praise desc LIMIT 3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_blog` ORDER BY blog_time desc LIMIT 3   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0018s ]
+SQL: SELECT `user_name`,`vip` FROM `think_users` ORDER BY vip desc LIMIT 5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005339s ]
+
+[ 2017-09-22T18:52:27+08:00 ] 104.192.74.30 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001172s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008041s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_blog` LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_blog` ORDER BY praise desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_blog` ORDER BY blog_time desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0016s ]
+SQL: SELECT `user_name`,`vip` FROM `think_users` ORDER BY vip desc LIMIT 5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2017-09-22T18:52:30+08:00 ] 104.192.74.30 /index.php/Home/Review-review.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003094s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_blog` ORDER BY praise desc LIMIT 8   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2017-09-22T18:52:30+08:00 ] 104.192.74.30 /index.php/Home/Gallery-gallery.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2017-09-22T18:52:30+08:00 ] 104.192.74.30 /index.php/Home/Index-index.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003263s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_blog` LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_blog` ORDER BY praise desc LIMIT 3   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_blog` ORDER BY blog_time desc LIMIT 3   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0016s ]
+SQL: SELECT `user_name`,`vip` FROM `think_users` ORDER BY vip desc LIMIT 5   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2017-09-22T18:52:31+08:00 ] 104.192.74.30 /index.php/Home/Gallery-gallery.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002823s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2017-09-22T18:52:31+08:00 ] 104.192.74.30 /index.php/Home/Review-review.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002855s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `think_blog` ORDER BY praise desc LIMIT 8   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2017-09-22T18:52:31+08:00 ] 104.192.74.30 /index.php/Home/Index-index.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002788s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_blog` LIMIT 4   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_blog` ORDER BY praise desc LIMIT 3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_blog` ORDER BY blog_time desc LIMIT 3   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0022s ]
+SQL: SELECT `user_name`,`vip` FROM `think_users` ORDER BY vip desc LIMIT 5   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2017-09-22T18:52:31+08:00 ] 104.192.74.30 /index.php/Home/Sign-signIn.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-09-22T18:52:32+08:00 ] 104.192.74.30 /index.php/Home/Sign-logout.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005402s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/b068931cc450442b63f5b3d276ea4297.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/9871d3a2c554b27151cacf1422eec048.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/c56f5648d4c0e137f9de3dfc7a54d55b.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1f2113f55e88b984a21b6aaad3372c34.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+
+[ 2017-09-22T18:52:32+08:00 ] 104.192.74.30 /index.php/Home/Sign-signIn.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2017-09-22T18:52:32+08:00 ] 104.192.74.30 /index.php/Home/Sign-logout.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004525s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/b068931cc450442b63f5b3d276ea4297.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/9871d3a2c554b27151cacf1422eec048.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/c56f5648d4c0e137f9de3dfc7a54d55b.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/1f2113f55e88b984a21b6aaad3372c34.php): No such file or directory /webHome/host1709404/www/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+
+[ 2017-09-22T18:52:32+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-1.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002919s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=1 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=1 ) ORDER BY praise desc  [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-09-22T18:52:33+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-3.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003027s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=3 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=3 ) ORDER BY praise desc  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=3 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-09-22T18:52:33+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-1.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003006s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=1 ) ORDER BY praise desc  [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-09-22T18:52:33+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-3.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003096s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=3 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=3 ) ORDER BY praise desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=3 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-09-22T18:52:33+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-4.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003083s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=4 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=4 ) ORDER BY praise desc  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=4 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:34+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-4.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002665s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=4 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=4 ) ORDER BY praise desc  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=4 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:37+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-2.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003139s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=2 ) ORDER BY praise desc  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=2 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-09-22T18:52:39+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-13.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004161s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=13 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=13 ) ORDER BY praise desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=13 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-09-22T18:52:39+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-13.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003996s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=13 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=13 ) ORDER BY praise desc  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=13 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:40+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-12.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003127s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=12 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=12 ) ORDER BY praise desc  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=12 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:40+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-12.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002628s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=12 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=12 ) ORDER BY praise desc  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=12 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:40+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-11.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003076s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=11 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=11 ) ORDER BY praise desc  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=11 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:41+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-11.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002663s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=11 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=11 ) ORDER BY praise desc  [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=11 ) LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2017-09-22T18:52:41+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-0.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003045s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='PHP' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2017-09-22T18:52:41+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-1.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003113s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='治愈' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2017-09-22T18:52:42+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-0.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002690s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='PHP' )  [ RunTime:0.0072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2017-09-22T18:52:42+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-1.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='治愈' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2017-09-22T18:52:43+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-2.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003118s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='生活' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001658s ]
+
+[ 2017-09-22T18:52:43+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-2.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002743s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=2 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=2 ) ORDER BY praise desc  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=2 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:43+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-3.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003259s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='小说' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2017-09-22T18:52:44+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-4.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='其他' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2017-09-22T18:52:44+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-2.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002652s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='生活' )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2017-09-22T18:52:44+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-3.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002743s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='小说' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2017-09-22T18:52:44+08:00 ] 104.192.74.30 /index.php/Home/Sign-signUp.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2017-09-22T18:52:45+08:00 ] 104.192.74.30 /index.php/Home/Single-single.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002908s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=0 ) ORDER BY praise desc  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=0 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-09-22T18:52:45+08:00 ] 104.192.74.30 /index.php/Home/Single-blog-kind-4.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003970s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_group='其他' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000769s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2017-09-22T18:52:45+08:00 ] 104.192.74.30 /index.php/Home/Sign-signUp.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2017-09-22T18:52:45+08:00 ] 104.192.74.30 /index.php/Home/Sign-forget.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002997s ]
+ERR: Template doesn't exist:./Application/Home/View/Sign/forget.html
+
+[ 2017-09-22T18:52:46+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-5.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003059s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=5 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=5 ) ORDER BY praise desc  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=5 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-09-22T18:52:46+08:00 ] 104.192.74.30 /index.php/Home/Sign-forget.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002535s ]
+ERR: 模板不存在:./Application/Home/View/Sign/forget.html
+
+[ 2017-09-22T18:52:46+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-5.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002696s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=5 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=5 ) ORDER BY praise desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=5 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:47+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-6.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003493s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=6 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=6 ) ORDER BY praise desc  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=6 ) LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2017-09-22T18:52:47+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-9.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003083s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=9 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=9 ) ORDER BY praise desc  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=9 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-09-22T18:52:47+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-6.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001120s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002639s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=6 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=6 ) ORDER BY praise desc  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=6 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:48+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-8.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004164s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=8 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=8 ) ORDER BY praise desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=8 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:48+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-9.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002777s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=9 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=9 ) ORDER BY praise desc  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=9 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:49+08:00 ] 104.192.74.30 /index.php/Home/Single-single-id-8.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003078s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=8 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=8 ) ORDER BY praise desc  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=8 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-09-22T18:52:50+08:00 ] 104.192.74.30 /index.php/Home/Single-single.tpl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002684s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_comments` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_blog` WHERE ( blog_id=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_comments` RIGHT JOIN think_users ON think_comments.name=think_users.user_name  WHERE ( blog_id=0 ) ORDER BY praise desc  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_comments` WHERE ( blog_id=0 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-09-22T23:45:58+08:00 ] 52.87.160.103 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006504s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array /webHome/host1709404/www/ThinkPHP/Library/Think/Hook.class.php 第 55 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002445s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.023404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026324s ]
+SQL: SHOW COLUMNS FROM `think_blog` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_blog` LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_blog` ORDER BY praise desc LIMIT 3   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_blog` ORDER BY blog_time desc LIMIT 3   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_users` [ RunTime:0.0019s ]
+SQL: SELECT `user_name`,`vip` FROM `think_users` ORDER BY vip desc LIMIT 5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant blog_content - assumed 'blog_content' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Use of undefined constant user_name - assumed 'user_name' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 216 行.
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' /webHome/host1709404/www/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001764s ]
+

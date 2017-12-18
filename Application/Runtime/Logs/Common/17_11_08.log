@@ -1,0 +1,36 @@
+[ 2017-11-08T10:10:57+08:00 ] 118.116.91.254 /Public/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-08T10:10:58+08:00 ] 118.116.91.254 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-08T11:01:09+08:00 ] 117.174.30.163 /Public/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-08T11:01:27+08:00 ] 117.174.30.163 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-11-08T11:02:30+08:00 ] 117.174.30.163 /Public/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+ERR: 无法加载模块:Public
+
+[ 2017-11-08T20:01:19+08:00 ] 69.58.178.59 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+ERR: 无法加载模块:Robots
+

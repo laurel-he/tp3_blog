@@ -211,40 +211,6 @@ h1.b1,h2.b2,h3.b3 {
   display:block;
   margin:0 0.7em;
 }
-
-#praise{  
-  text-align:right;
-}
-#praise ul li{
-  padding: 0em;
-  list-style:none;
-  display:inline-block;
-}
-#praise ul li a{
- display:inline-block;
- margin: 0em 0.4em 0.5em 0em;
-}
-#praise ul li a span.user_praise {
-  background-position: -374px -140px;
-}
-#praise ul li a span.user_hate {
-  background-position: -177px -136px;
-}
-
-#praise ul li a  span.user_praise:hover {
-  background-position:-374px -2px;
-}
-#praise ul li a span.user_hate:hover {
-  background-position: -1px -136px;
-}
-
-#praise ul li span{
-  background:url(../images/praise.jpg)no-repeat;
-  width:45px;
-  height:45px;
-  display:block;
-  margin:0 0.7em;
-}
 /*--welcome--*/
 .welcome{
 	padding:5em 0;

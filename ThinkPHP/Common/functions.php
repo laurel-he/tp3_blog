@@ -53,7 +53,7 @@ function C($name=null, $value=null,$default=null) {
 /**
 截取中文字符串函数
 */
-function msubstr($str, $start=0, $lengthz)  
+function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=true)  
     {  
   if(function_exists("mb_substr")){  
               if($suffix)  

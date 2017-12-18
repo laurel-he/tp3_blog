@@ -4,18 +4,18 @@
 <meta name="baidu-site-verification" content="vTLMT2DocA" />
 <title><?php echo (L("title")); ?></title>
 <!-- 引入ico图标并且设置书签栏 -->
-<link rel="shortcut icon"  href="/tp3/tp3_blog/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/tp3/tp3_blog/Public/images/fivicon.ico" />
-<link href="/tp3/tp3_blog/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/tp3/tp3_blog/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="/tp3/tp3_blog/Public/css/lightbox.css">
+<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/Public/images/fivicon.ico" />
+<link href="/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/Public/css/lightbox.css">
 
 <!-- jQuery -->
-<script type='text/javascript' src="/tp3/tp3_blog/Public/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="/Public/js/jquery-1.11.1.min.js"></script>
 <!--分享当前页面到qq空间-->
-<script type='text/javascript' src="/tp3/tp3_blog/Public/js/share.js"></script>
+<script type='text/javascript' src="/Public/js/share.js"></script>
 <!--引入css文件 -->
-<link href='/tp3/tp3_blog/Public/css/family.css' rel='stylesheet' type='text/css'>
+<link href='/Public/css/family.css' rel='stylesheet' type='text/css'>
 <!-- Custom Theme files -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,7 +68,7 @@
 								 <?php if(cookie('user_name') == 'admin'): ?><li><a href="<?php echo U('Blog/add');?>"><?php echo (L("review_3")); ?></a></li>
 									<?php else: ?>						
 								 <li><a href="<?php echo ($galleryUrl); ?>"><?php echo (L("gallery")); ?></a></li><?php endif; ?>
-								 <li><a href="<?php echo ($signUrl); ?>"><?php echo (L("sign")); ?></a></li>
+								 <?php if(cookie('user_name') == ''): ?><li><a href="<?php echo ($signUrl); ?>"><?php echo (L("sign")); ?></a></li><?php endif; ?>
 								  <li><a href="<?php echo U('Sign/logout');?>"><?php echo (L("logout")); ?></a></li>
 							 </ul>
 							</div>
@@ -77,7 +77,7 @@
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/tp3/tp3_blog/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -115,7 +115,7 @@
 						 <p><?php echo (L("motto")); ?></p>
 					 </div>
 					 <div class="info-pic">	
-						 <img src="/tp3/tp3_blog/Public/images/ps.png" class="img-responsive" alt=""/>
+						 <img src="/Public/images/ps.png" class="img-responsive" alt=""/>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>				 
@@ -129,7 +129,7 @@
 							 <img src="<?php echo ($cont["blog_images"]); ?>" class="img-responsive" alt=""/>
 							 <div class="grid1-info">
 								 <h4><a href="<?php echo U('Single/single',array('id'=>1));?>"><?php echo ($cont['blog_name']); ?></a></h4>
-								 <p><?php echo (substr($cont[blog_content],0,62)); ?></p>								 
+								 <p><?php echo (msubstr($cont[blog_content],0,62)); ?></p>								 
 							 </div>
 							 <div class="more">
 							 <a href="<?php echo U('Single/single',array('id'=>1));?>"><?php echo (L("read_more")); ?></a>
@@ -184,68 +184,29 @@
                <!-- Tab panes -->
               <div class="tab-content">
 						<div role="tabpanel" class="tab-pane active re-pad2" id="home">
-						   <div class="game1">
+						   <?php if(is_array($hot_rank)): $i = 0; $__LIST__ = $hot_rank;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hot): $mod = ($i % 2 );++$i;?><div class="game1">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr1.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo U('Single/single',array('id'=>$hot['blog_id']));?>"><img src="<?php echo ($hot["blog_images"]); ?>" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-pic-info">
-								<h4><a href="<?php echo ($singleUrl); ?>">Angry Birds</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+								<h4><a href="<?php echo U('Single/single',array('id'=>$hot['blog_id']));?>"><?php echo ($hot["blog_name"]); ?></a></h4>
+								<p><?php echo (substr($hot["blog_content"],0,30)); ?></p>
 								</div>
 								<div class="clearfix"></div>
-							</div>
-							<div class="game1">
-								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr3.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-pic-info">
-								<h4><a href="<?php echo ($singleUrl); ?>">Vice City GTA</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-								</div>                                                                                                                                                                                                                     
-								<div class="clearfix"></div>
-							</div>
-							<div class="game1">
-								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr2.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-pic-info">
-								<h4><a href="<?php echo ($singleUrl); ?>">Call Of Duty</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
+							</div><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>
 						<div role="tabpanel" class="tab-pane re-pad2" id="profile">
-							<div class="game-post">
+							
+						<?php if(is_array($time_rank)): $i = 0; $__LIST__ = $time_rank;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$time): $mod = ($i % 2 );++$i;?><div class="game-post">
 								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr4.jpg" alt="/" class="img-responsive"></a>
+									<a href="<?php echo U('Single/single',array('id'=>$time['blog_id']));?>"><img src="<?php echo ($time["blog_images"]); ?>" alt="/" class="img-responsive"></a>
 								</div>
 								<div class="col-md-9 tab-post-info">
-								<h4><a href="<?php echo ($singleUrl); ?>">IronMan</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
+								<h4><a href="<?php echo U('Single/single',array('id'=>$time['blog_id']));?>"><?php echo ($time["blog_name"]); ?></a></h4>
+								<p>Posted By <a href="#"><?php echo ($time["blog_author"]); ?></a> &nbsp;&nbsp; on <?php echo (date('Y-m-d H:i:s',strtotime($time["blog_time"]))); ?> &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
 								</div>
 								<div class="clearfix"></div>
-							</div>
-							<div class="game-post">
-								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr5.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-post-info">
-								<h4><a href="<?php echo ($singleUrl); ?>">God Of War</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="game-post">
-								<div class="col-md-3 tab-pic">
-									<a href="<?php echo ($singleUrl); ?>"><img src="/tp3/tp3_blog/Public/images/tr6.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-post-info">
-								<h4><a href="<?php echo ($singleUrl); ?>">Need For Speed</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
+							</div><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>                   
 			 </div>
 			 <!---->
@@ -261,37 +222,37 @@
 				 <h4><?php echo (L("gallery")); ?></h4>
 				 <div class="gallery-1">
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p2.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p2.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/p2.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p2.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p1.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p1.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p3.jpg" alt=""/></a>
-					</div>
-					<div class="clearfix"></div>
-				 </div>
-				 <div class="gallery-1">
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p4.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p5.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p5.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p6.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p6.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p3.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				 </div>
 				 <div class="gallery-1">
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p1.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p4.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p3.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/p5.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p5.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="/tp3/tp3_blog/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/tp3/tp3_blog/Public/images/p4.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/p6.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p6.jpg" alt=""/></a>
+					</div>
+					<div class="clearfix"></div>
+				 </div>
+				 <div class="gallery-1">
+					<div class="col-md-4 gallery-grid-pic">
+						<a class="example-image-link" href="/Public/images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p1.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-4 gallery-grid-pic">
+						<a class="example-image-link" href="/Public/images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p3.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-4 gallery-grid-pic">
+						<a class="example-image-link" href="/Public/images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/p4.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				 </div>
@@ -304,34 +265,41 @@
 </div>
 
 
-<script src="/tp3/tp3_blog/Public/js/lightbox-plus-jquery.min.js"></script>
+<script src="/Public/js/lightbox-plus-jquery.min.js"></script>
 
 <!--引入footer-->
+<link rel="stylesheet" href="/Public/flipcountdown/jquery.flipcountdown.css" />
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="/Public/flipcountdown/jquery.flipcountdown.js"></script>
+<script>
+	$(function()
+	{
+		$('#flipcountdown_01').flipcountdown({
+			size:"lg"
+		});
+	});
+</script>
 <!-- footer -->
 <div class="footer">
 	 <div class="container">
+	 
 		 <div class="footer-grids">
-			 <div class="col-md-6 news-ltr">
-				 <h4>Connection</h4>
-				 <p>If you have any userful suggestion or infomation,you can contact me by enter your email or other way to connect you, thank you!</p>
-				 <form action="" method="post">					 
-					  <input type="text" class="text" value="Enter suggestion" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Email';}">
-					 <input type="submit" value="<?php echo (L("send")); ?>">
-					 <div class="clearfix"></div>
-				 </form>			 
+			 <div class="col-md-6 news-ltr" id="flipcountdown_01">
+				 		 <h4>&nbsp;&nbsp;&nbsp;&nbsp;这是基于ThinkPHP3.2.3的个人博客，接下来很长一段时间我要学习新的技术，并且同时我想好好学学phtotoshop，本博客暂停更新</h4>
 			 </div>
+
 			 <div class="col-md-3 ftr-grid">
 				 <h3><?php echo (L("foot_catogory")); ?></h3>
 				 <ul class="ftr-list">
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>0));?>"><?php echo (L("php")); ?></a></li>
-					 <li><a href="<?php echo U('Single/blog',array('kind'=>1));?>"><?php echo (L("js")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>1));?>"><?php echo (L("cure")); ?></a></li>
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>2));?>"><?php echo (L("life")); ?></a></li>
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>3));?>"><?php echo (L("novel")); ?></a></li>
 					 <li><a href="<?php echo U('Single/blog',array('kind'=>4));?>"><?php echo (L("others")); ?></a></li>
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/tp3/tp3_blog/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

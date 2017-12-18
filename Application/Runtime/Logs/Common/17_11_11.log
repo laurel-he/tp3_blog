@@ -1,0 +1,42 @@
+[ 2017-11-11T17:49:20+08:00 ] 201.18.18.173 /wp-includes/wlwmanifest.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+ERR: 无法加载模块:Wp-includes
+
+[ 2017-11-11T17:49:21+08:00 ] 201.18.18.173 /xmlrpc.php?rsd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+ERR: 无法加载模块:Xmlrpc
+
+[ 2017-11-11T17:49:23+08:00 ] 201.18.18.173 /blog/wp-includes/wlwmanifest.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001158s ]
+ERR: 无法加载模块:Blog
+
+[ 2017-11-11T17:49:23+08:00 ] 201.18.18.173 /wordpress/wp-includes/wlwmanifest.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+ERR: 无法加载模块:Wordpress
+
+[ 2017-11-11T17:49:23+08:00 ] 201.18.18.173 /wp/wp-includes/wlwmanifest.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+ERR: 无法加载模块:Wp
+
+[ 2017-11-11T17:49:24+08:00 ] 201.18.18.173 /site/wp-includes/wlwmanifest.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+ERR: 无法加载模块:Site
+
+[ 2017-11-11T17:49:24+08:00 ] 201.18.18.173 /cms/wp-includes/wlwmanifest.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 无法加载模块:Cms
+

@@ -1,0 +1,42 @@
+[ 2017-08-02T00:52:58+08:00 ] 64.246.161.190 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001628s ]
+ERR: 无法加载模块:Robots
+
+[ 2017-08-02T05:06:50+08:00 ] 167.114.209.38 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+ERR: 无法加载模块:Robots
+
+[ 2017-08-02T05:06:51+08:00 ] 167.114.209.38 /sitemap.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+ERR: 无法加载模块:Sitemap
+
+[ 2017-08-02T12:30:36+08:00 ] 222.211.206.88 /Public/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001593s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-02T12:30:40+08:00 ] 222.211.206.88 /Public/js/lightbox-plus-jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-02T12:30:40+08:00 ] 222.211.206.88 /Public/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001761s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-02T12:31:34+08:00 ] 222.211.206.88 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+ERR: 无法加载模块:Favicon
+

@@ -2,14 +2,14 @@
 <html>
 <head>
 <title>相册</title>
-<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
-<link href="/www/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/www/Public/css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="/www/Public/css/lightbox.css">
+<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/Public/images/fivicon.ico" />
+<link href="/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/Public/css/lightbox.css">
 
 <!-- jQuery (necessary JavaScript plugins) -->
-<script type='text/javascript' src="/www/Public/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="/Public/js/jquery-1.11.1.min.js"></script>
 <!-- Custom Theme files -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
 <!-- Custom Theme files -->
@@ -23,8 +23,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!-- header -->
-<link rel="shortcut icon"  href="/www/Public/images/favicon.ico" />
-<link rel="Bookmark" href="/www/Public/images/fivicon.ico" />
+<link rel="shortcut icon"  href="/Public/images/favicon.ico" />
+<link rel="Bookmark" href="/Public/images/fivicon.ico" />
 <div class="banner banner2">
 	 <div class="container">
 		 <div class="headr-right">
@@ -61,8 +61,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("review_2")); ?></a></li>
 									</ul>
 								 </li>					
-								 <li><a href="<?php echo U('Gallery/gallery');?>"><?php echo (L("gallery")); ?></a></li>
-								 <li><a href="<?php echo U('Sign/signIn');?>"><?php echo (L("sign")); ?></a></li>
+								 <?php if(cookie('user_name') == 'admin'): ?><li><a href="<?php echo U('Blog/add');?>"><?php echo (L("review_3")); ?></a></li>
+									<?php else: ?>						
+								 <li><a href="{Gallery/gallery}"><?php echo (L("gallery")); ?></a></li><?php endif; if(cookie('user_name') == ''): ?><li><a href="<?php echo U('Sign/signUp');?>"><?php echo (L("sign")); ?></a></li><?php endif; ?>
                                                                  <li><a href="<?php echo U('Sign/logout');?>"><?php echo (L("logout")); ?></a></li>
 							 </ul>
 							</div>
@@ -71,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <!--/navbar-->
 				 </div>
 					 <div class="clearfix"></div>
-					<script type="text/javascript" src="/www/Public/js/bootstrap-3.1.1.min.js"></script>
+					<script type="text/javascript" src="/Public/js/bootstrap-3.1.1.min.js"></script>
 			  </div>
 				 <div class="clearfix"></div>
 		  </div>
@@ -86,80 +87,87 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="gallery-bottom">
 				<div class="gallery-1">
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g2.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g2.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g2.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g2.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g1.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g1.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g1.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g1.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g3.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g3.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g3.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g3.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g4.jpg" alt=""/></a>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="gallery-1">
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g5.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g6.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g6.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g9.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g9.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g7.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g4.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="gallery-1">
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g4.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g5.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g7.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g6.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g6.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g5.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g9.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g9.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 gallery-grid">
-						<a class="example-image-link" href="/www/Public/images/g8.jpg" data-lightbox="example-set"><img class="example-image" src="/www/Public/images/g8.jpg" alt=""/></a>
+						<a class="example-image-link" href="/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g7.jpg" alt=""/></a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="gallery-1">
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/Public/images/g4.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g4.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/Public/images/g7.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g7.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/Public/images/g5.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g5.jpg" alt=""/></a>
+					</div>
+					<div class="col-md-3 gallery-grid">
+						<a class="example-image-link" href="/Public/images/g8.jpg" data-lightbox="example-set"><img class="example-image" src="/Public/images/g8.jpg" alt=""/></a>
 					</div>
 					<div class="clearfix"></div>
 				</div>				
 		 </div>
 	 </div>
 </div>	
-<script src="/www/Public/js/lightbox-plus-jquery.min.js"></script>
+<script src="/Public/js/lightbox-plus-jquery.min.js"></script>
 
 <!--引入footer-->
+<link rel="stylesheet" href="/Public/flipcountdown/jquery.flipcountdown.css" />
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="/Public/flipcountdown/jquery.flipcountdown.js"></script>
+<script>
+	$(function()
+	{
+		$('#flipcountdown_01').flipcountdown({
+			size:"lg"
+		});
+	});
+</script>
 <!-- footer -->
 <div class="footer">
 	 <div class="container">
+	 
 		 <div class="footer-grids">
-			 <div class="col-md-6 news-ltr">
-				 <h4>Connection</h4>
-				 <p>If you have any userful suggestion or infomation,you can contact me by enter your email or other way to connect you, thank you!</p>
-				 <form action="" method="post">					 
-					  <input type="text" class="text" value="Enter suggestion" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Email';}">
-					 <input type="submit" value="<?php echo (L("send")); ?>">
-					 <div class="clearfix"></div>
-				 </form>			 
+			 <div class="col-md-6 news-ltr" id="flipcountdown_01">
+				 		 <h4>&nbsp;&nbsp;&nbsp;&nbsp;这是基于ThinkPHP3.2.3的个人博客，接下来很长一段时间我要学习新的技术，并且同时我想好好学学phtotoshop，本博客暂停更新</h4>
 			 </div>
+
 			 <div class="col-md-3 ftr-grid">
 				 <h3><?php echo (L("foot_catogory")); ?></h3>
 				 <ul class="ftr-list">
-					 <li><a href="#"><?php echo (L("php")); ?></a></li>
-					 <li><a href="#"><?php echo (L("js")); ?></a></li>
-					 <li><a href="#"><?php echo (L("life")); ?></a></li>
-					 <li><a href="#"><?php echo (L("novel")); ?></a></li>
-					 <li><a href="#"><?php echo (L("others")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>0));?>"><?php echo (L("php")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>1));?>"><?php echo (L("cure")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>2));?>"><?php echo (L("life")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>3));?>"><?php echo (L("novel")); ?></a></li>
+					 <li><a href="<?php echo U('Single/blog',array('kind'=>4));?>"><?php echo (L("others")); ?></a></li>
 				 </ul>							 
 			 </div>	
 			 <div class="col-md-3 ftr-grid">
-				 <img src="/www/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
+				 <img src="/Public/images/weixin.jpg" style="height:80%;width:80%" alt="<?php echo (L("erweima")); ?>"/>			 
 			 </div>			 	
 			 <div class="clearfix"></div>
 		 </div>

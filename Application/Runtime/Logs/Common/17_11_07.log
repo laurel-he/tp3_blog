@@ -1,0 +1,18 @@
+[ 2017-11-07T14:20:57+08:00 ] 5.188.203.23 /wordpress/wp-admin/admin-ajax.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Wordpress
+
+[ 2017-11-07T14:20:57+08:00 ] 5.188.203.23 /wp-admin/admin-ajax.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载模块:Wp-admin
+
+[ 2017-11-07T14:20:57+08:00 ] 5.188.203.23 /wp/wp-admin/admin-ajax.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+ERR: 无法加载模块:Wp
+

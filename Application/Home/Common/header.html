@@ -40,7 +40,7 @@
 								 <if condition="cookie('user_name') eq 'admin'">
 										<li><a href="{:U('Blog/add')}">{$Think.lang.review_3}</a></li>
 									<else />						
-								 <li><a href="{Gallery/gallery}">{$Think.lang.gallery}</a></li>
+								 <li><a href="{:U('Gallery/gallery')}">{$Think.lang.gallery}</a></li>
 								 </if><if condition="cookie('user_name') eq ''">
 								 <li><a href="{:U('Sign/signUp')}">{$Think.lang.sign}</a></li>
 								 </if>
